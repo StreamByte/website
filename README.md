@@ -32,7 +32,16 @@ Para comenzar, no hace falta experiencia, solamente tener un editor de código, 
 Una vez que se haya lanzado el proyecto, está sección se actualizará con herramientas creadas por y para la comunidad de StreamByte y del desarrollo Front-End.
 
 ## Sistema de diseño y prototipo en Figma
+Puedes revisar el sistema de diseño actual y prototipo del proyecto en Figma:
+- [Enlace del diseño](https://www.figma.com/design/ZvkKIGeJNrgLf1ceCxRNSf/StreamByte?node-id=4279-2990&t=R167AOYKOrLduJoH-1)
+
 ## Como usar la plantilla del reto
-## Como postular tu solución
-## Versión Pro
-## ¿Te interesa contratarme?
+Actualmente los retos se encuantran siendo creados.
+
+## Administración de tareas del proyecto
+Si te interesa saber como organizo mis proyectos y administro mis tareas, este proyecto está siendo documentado a través de Notion:
+- [Enlace del dashboard](https://purple-literature-335.notion.site/Workspace-Template-by-Gonzz-ac87302172ae40778d26cd83759874ba)
+- Si quieres adquirir la plantilla de organización proyectos que uso, puedes hacerlo [aquí](https://gonzz.gumroad.com/l/workspace)
+
+## Se aceptan colaboraciones
+Si tienes algun consejo, tip o retroalimentación que quieras darme o te interesa que trabajemos juntos, puedes contactarme en [Discord](https://discord.gg/4WfzyGyrpc), [Linkedin](https://www.linkedin.com/in/gonzz-dev/) y a través de mi [e-mail](mailto:contact@gonzz.dev).
