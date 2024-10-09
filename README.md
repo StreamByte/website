@@ -1,54 +1,38 @@
-# Astro Starter Kit: Basics
+![Screenshot 2024-10-07 225238](https://github.com/user-attachments/assets/cc4c930c-bf1d-4e25-9cde-e906e9b08b67)
 
-```sh
-npm create astro@latest -- --template basics
-```
+Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front-End diseñados en **StreamByte**. Descarga el diseño profesional, resuelve y agrega a tus proyectos web.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Comunidad
+<p align="left">
+   <a href="https://www.youtube.com/@josegonzz">
+      <img alt="YouTube badge" title="Subscribe to my YouTube channel" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+   </a>
+   
+   <a href="https://discord.gg/4WfzyGyrpc">
+      <img alt="Discord badge" title="Join my Discord server to talk" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+   </a>
+      
+</p>
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Presentación
+**StreamByte** te invita a resolver sus retos de programación de acuerdo a tu nivel, tanto si buscas aprender con tus primeros proyectos, como si buscas practicar tus habilidades con diseños profesionales, estamos felices de apoyarte en el camino.
 
-## 🚀 Project Structure
+Para comenzar, no hace falta experiencia, solamente tener un editor de código, internet y descargar los archivos. Te recomiendo las siguientes guías, tutoriales y herramientas:
+- Para conocer las bases de HTML y CSS:
+  - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+  - [LenguajeHTML](https://lenguajehtml.com/) | [LenguajeCSS](https://lenguajecss.com/) | [LenguajeJS](https://lenguajejs.com/) by [@ManzDev](https://manz.dev/)
+  - Nuestra comunidad en [Discord](https://discord.gg/4WfzyGyrpc) y videos tutoriales en [YouTube](https://www.youtube.com/@StreamByte-mx) (en progreso)
+- Editor de código recomendado:
+  - [VSCode](https://code.visualstudio.com/)
+- Navegador recomendado:
+  - [Brave](https://brave.com/es/download/) aunque puedes usar el que prefieras
 
-Inside of your Astro project, you'll see the following folders and files:
+Una vez que se haya lanzado el proyecto, está sección se actualizará con herramientas creadas por y para la comunidad de StreamByte y del desarrollo Front-End.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Sistema de diseño y prototipo en Figma
+## Como usar la plantilla del reto
+## Como postular tu solución
+## Versión Pro
+## ¿Te interesa contratarme?
