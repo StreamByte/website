@@ -16,6 +16,9 @@ Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front
       
 </p>
 
+## Este proyecto se creará a través de la serie de videos de mi canal de YouTube:
+- [Creando un proyecto web COMPLETAMENTE desde cero | Parte 001](https://www.youtube.com/watch?v=6AnEljZjOlk)
+
 ## Presentación
 **StreamByte** te invita a resolver sus retos de programación de acuerdo a tu nivel, tanto si buscas aprender con tus primeros proyectos, como si buscas practicar tus habilidades con diseños profesionales, estamos felices de apoyarte en el camino.
 
