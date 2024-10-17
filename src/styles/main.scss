@@ -26,25 +26,25 @@ body {
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
     margin-left: 100px;
 }
 
 .navbar {
     display: flex;
-    margin-right: 100px;
     align-items: center;
+    justify-content: space-between;
 }
 
-.nav-items {
+.nav-items, a {
     display: flex;
     color: $shades-black;
-    font-size: $font-paragraph-1;
+    font-size: $font-heading-6;
     font-weight: $font-medium;
     font-style: normal;
-    gap: 40px;
     list-style: none;
-    margin-right: 40px;
+    gap: 40px;
+    text-decoration: none;
 }
 
 .button {
@@ -56,6 +56,7 @@ body {
     font-size: $font-heading-6;
     font-weight: $font-medium;
     text-decoration: none;
+    margin-right: 100px;
 }
 
 .hero-section {
@@ -94,6 +95,16 @@ body {
     font-size: $font-heading-2;
     font-weight: $font-bold;
     font-style: normal;
+    margin-bottom: 32px;
+}
+
+.page-title {
+    text-align: start;
+    color: $shades-black;
+    font-size: $font-heading-2;
+    font-weight: $font-bold;
+    font-style: normal;
+    margin-top: 100px;
     margin-bottom: 32px;
 }
 
@@ -222,6 +233,79 @@ body {
     color: $shades-black;
 }
 
+.challenge-section {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 397px;
+    height: 520px;
+    background-color: $primary-100;
+    border: 2px solid $primary-900;
+    border-radius: 10px;
+}
+
+.challenge-image {
+    max-width: 362px;
+    border-radius: 10px 10px 0 0;
+}
+
+.challenge-title {
+    font-size: $font-heading-5;
+    font-weight: $font-bold;
+    padding: 20px 0 8px 20px;
+}
+
+.challenge-description {
+    font-size: $font-paragraph-1;
+    font-weight: $font-medium;
+    padding: 0 20px 0 20px;
+}
+
+.level-section {
+    padding: 0 20px 15px 20px;
+}
+
+.stack {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+
+.tag {
+    padding: 10px 16px;
+    border-radius: 100px;
+}
+
+.html {
+    background-color: $secondary-200;
+}
+
+.css {
+    background-color: $secondary-200;
+}
+
+.js {
+    background-color: $neutral-300;
+}
+
+.favorite-challenges {
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.challenge-slider {
+    display: flex;
+    gap: 24px;
+}
+
 .footer {
     height: 100px;
     display: flex;
@@ -230,7 +314,7 @@ body {
     justify-content: space-between;
 }
 
-.footer-text, a {
+.footer-text {
     color: $shades-white;
     font-family: $font-family-primary;
     font-size: $font-paragraph-1;
@@ -238,3 +322,4 @@ body {
     text-decoration: none;
     margin-right: 50px;
 }
+

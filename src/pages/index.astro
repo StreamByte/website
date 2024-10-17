@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Banner from '../components/Banner.astro';
 import InstructionBento from '../components/InstructionBento.astro';
+import CardSlider from '../components/CardSlider.astro';
 
 import '../styles/main.scss'
 ---
@@ -38,6 +39,11 @@ import '../styles/main.scss'
 			<h2 class="main-title">
 				Retos Favoritos
 			</h2>
+			<ul class="challenge-slider">
+				<CardSlider />
+				<CardSlider />
+				<CardSlider />
+			</ul>
 		</section>
 	</main>
 </Layout>
