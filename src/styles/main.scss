@@ -130,6 +130,7 @@ body {
 
 .bento-section {
     display: flex;
+    justify-content: center;
     gap: 24px;
     margin-bottom: 76px;
 }
@@ -233,7 +234,9 @@ body {
     color: $shades-black;
 }
 
-.challenge-section {
+.favorite-challenges {
+    display: flex;
+    justify-content: center;
     margin-left: 100px;
     margin-bottom: 100px;
 }
@@ -304,6 +307,14 @@ body {
 .challenge-slider {
     display: flex;
     gap: 24px;
+}
+
+.community-cta {
+    display: flex;
+    justify-content: center;
+    max-width: 1148px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .footer {
