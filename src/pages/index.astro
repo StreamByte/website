@@ -1,10 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import Banner from '../components/Banner.astro';
-import InstructionBento from '../components/InstructionBento.astro';
 import CardSlider from '../components/CardSlider.astro';
+import CommunityComponent from '../components/CommunityComponent.astro';
+import InstructionBento from '../components/InstructionBento.astro';
+import Layout from '../layouts/Layout.astro';
 
-import '../styles/main.scss'
+import '../styles/main.css'
 ---
 
 <Layout title="StreamByte ⚡ - Aprende y mejora tus habilidades en Front-End con retos reales y profesionales">
@@ -36,14 +37,20 @@ import '../styles/main.scss'
 		</section>
 
 		<section class="favorite-challenges">
-			<h2 class="main-title">
-				Retos Favoritos
-			</h2>
-			<ul class="challenge-slider">
-				<CardSlider />
-				<CardSlider />
-				<CardSlider />
-			</ul>
+			<div>
+				<h2 class="main-title">
+					Retos Favoritos
+				</h2>
+				<ul class="challenge-slider">
+					<CardSlider />
+					<CardSlider />
+					<CardSlider />
+				</ul>
+			</div>
+		</section>
+
+		<section class="community-cta">
+			<CommunityComponent />
 		</section>
 	</main>
 </Layout>
