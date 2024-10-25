@@ -7,7 +7,7 @@ Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front
 Aségurate de tener las siguientes herramientas instaladas:
 - [Node.js](https://nodejs.org/en/) (v19 no está soportada)
 
-# Guia de contribución
+# Guia de Contribución
 
 1. Haz **fork** a este repositorio
    - Da clic en el botón de **fork** para crear una copia del proyecto.
