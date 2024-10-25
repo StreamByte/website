@@ -2,8 +2,6 @@
 
 Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front-End diseñados en **StreamByte**. Descarga el diseño profesional, resuelve y agrega a tus proyectos web.
 
----
-
 # Requisitos Previos
 
 Aségurate de tener las siguientes herramientas instaladas:
