@@ -5,7 +5,8 @@ Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front
 # Requisitos Previos
 
 Aségurate de tener las siguientes herramientas instaladas:
-- [Node.js](https://nodejs.org/en/) (v19 no está soportada)
+- [Node.js](https://nodejs.org/en/) v18.17.1 o v20.3.0 en adelante (v19 no está soportada)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 # Guia de Contribución
 
@@ -35,7 +36,7 @@ Aségurate de tener las siguientes herramientas instaladas:
 
 7. Sube los cambios a tu fork en GitHub:
 
-        git push nombre-de-tu-rama
+        git push origin nombre-de-tu-rama
 
 8. Crea el Pull Request en GitHub:
     - En tu rama en GitHub, deberás ver una opción para crear una Pull Request, da clic y asegurate de dejar un título y descripción claros especificando cualquier información relevante        sobre tus cambios.
