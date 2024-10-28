@@ -5,12 +5,12 @@ Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front
 # Requisitos Previos
 
 Aségurate de tener las siguientes herramientas instaladas:
-- [Node.js](https://nodejs.org/en/) (v19 no está soportada)
+- [Node.js](https://nodejs.org/en/) v18.17.1 o v20.3.0 en adelante (v19 no está soportada)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 1. Clona el repositorio y navega a la carpeta del proyecto:
 
-         git clone https://github.com/tu-usuario/streambyte.git
-         cd streambyte
+         git clone https://github.com/StreamByte/website.git
 
 2. Instala las dependencias:
 
