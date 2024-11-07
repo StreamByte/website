@@ -8,10 +8,59 @@ import LoginButton from "./LoginButton.astro"
     </a>
     <nav class="navbar">
         <ul class="nav-items">
-            <li>Retos</li>
-            <li>Soluciones</li>
-            <li>Pro</li>
+            <a href="/retos">
+                <li class="item">Retos</li>
+            </a>
+            <a href="" class="disabled-item">
+                <li class="item">Soluciones</li>
+            </a>
+            <a href="">
+                <li class="item">Pro</li>
+            </a>
         </ul>
         <LoginButton />
     </nav>
 </header>
+
+<style is:global>
+    .header {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid var(--shades-black);
+    }
+
+    .header-icon {
+        margin-left: 100px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .nav-items {
+        display: flex;
+        gap: 40px;
+    }
+
+    .item {
+        color: var(--shades-black);
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-medium);
+        list-style: none;
+        transition-duration: 0.3s;
+    }
+
+    .disabled-item {
+        color: var(--neutral-500);
+        filter: blur(1.5px);
+    }
+
+    .item:hover {
+        color: var(--primary-500);
+    }
+</style>

@@ -1,0 +1,36 @@
+---
+import DiscordButton from "./DiscordButton.astro";
+import YouTubeButton from "./YouTubeButton.astro";
+---
+
+<main class="community-container">
+    <h2 class="main-title">Únete a la comunidad</h2>
+    <p class="community-text description">Muchos desarrolladores se reúnen en nuestra comunidad para compartir recursos, dar ayuda, estar al tanto de los nuevos retos en StreamByte, crear proyectos en conjunto y mucho más.</p>
+    <div class="community-buttons">
+        <DiscordButton />
+        <YouTubeButton />
+    </div>
+</main>
+
+<style is:global>
+    .community-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--primary-200);
+        margin-bottom: 100px;
+        max-width: 1080px;
+        padding: 36px 0 100px 0;
+    }
+
+    .community-text {
+        display: flex;
+        text-align: center;
+        margin-top: -24px;
+    }
+
+    .community-buttons {
+        display: flex;
+        align-items: center;
+    }
+</style>

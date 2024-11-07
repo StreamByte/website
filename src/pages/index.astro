@@ -1,7 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Banner from '../components/Banner.astro';
+import CardSlider from '../components/CardSlider.astro';
+import ChallengesButton from '../components/ChallengesButton.astro';
+import CommunityComponent from '../components/CommunityComponent.astro';
 import InstructionBento from '../components/InstructionBento.astro';
+import Layout from '../layouts/Layout.astro';
+import DiscordButton from '../components/DiscordButton.astro'
+import YouTubeButton from '../components/YouTubeButton.astro'
 
 import '../styles/main.scss'
 ---
@@ -13,7 +19,7 @@ import '../styles/main.scss'
 				Aprende desarrollo frontend con retos y proyectos reales.
 			</h1>
 			<div class="cta-section">
-				<img src="/assets/images/process-preview-windows.png" alt="Captura de proceso | Diseño de hero" />
+				<!-- <img src="/assets/images/process-preview-windows.png" alt="Captura de proceso | Diseño de hero" /> -->
 				<div class="hero-cta">
 					<h2 class="cta-title">
 						¿Qué Hacemos?
@@ -21,6 +27,11 @@ import '../styles/main.scss'
 					<p class="description">
 						StreamByte es una página de retos de programación enfocados al Front-End. Mejora tus habilidades, aprende nuevas tecnologías, añade a tu portafolio y comparte tu progreso con la comunidad.
 					</p>
+					<div class="cta-buttons">
+						<ChallengesButton />
+						<DiscordButton />
+						<YouTubeButton />
+					</div>
 				</div>
 			</div>
 		</section>

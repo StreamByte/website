@@ -1,0 +1,54 @@
+---
+import StackTag from "./StackTag.astro";
+import ChallengeLevel from "./ChallengeLevel.astro"
+
+---
+<div class="card-container">
+    <div class="card-content">
+        <img src="/assets/images/Reto-01.png" class="challenge-image" />
+        <h3 class="challenge-title">
+            Previsualización de producto
+        </h3>
+        <p class="challenge-description">
+            En este reto, practicarás las bases de HTML y CSS creando una tarjeta de previsualización de producto.
+        </p>
+    </div>
+    <div class="level-section">
+        <StackTag />
+        <ChallengeLevel />
+    </div>
+</div>
+
+<style is:global>
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 344px;
+        height: 520px;
+        background-color: var(--primary-100);
+        border: 2px solid var(--primary-900);
+    }
+    .challenge-image {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        max-width: 340px;
+    }
+
+    .challenge-title {
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
+        padding: 20px 0 8px 20px;
+    }
+
+    .challenge-description {
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-medium);
+        padding: 0 20px 0 20px;
+    }
+
+    .level-section {
+        padding: 0 20px 15px 20px;
+    }
+</style>

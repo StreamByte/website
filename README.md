@@ -1,10 +1,63 @@
 ![Screenshot 2024-10-07 225238](https://github.com/user-attachments/assets/cc4c930c-bf1d-4e25-9cde-e906e9b08b67)
 
-Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front-End diseñados en **StreamByte**. Descarga el diseño profesional, resuelve y agrega a tus proyectos web.
+Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front-End diseñados en **StreamByte**. Descarga el diseño, resuelve el reto y agrega el proyecto a tu portafolio.
+
+# Presentación
+
+¡Hola devs! 👋🏽
+
+La idea detrás de este proyecto es diseñar y estructurar retos de HTML, CSS y JavaScript basados en prototipos de Figma. Como soy principiante y comprendo lo díficil que es encontrar recursos prácticos para mejorar en Front-End, me gustaría estructurar un reto de cada problema que encuentro en el día a día y compartirlo con la comunidad.
+
+## Requisitos Previos
+
+Aségurate de tener las siguientes herramientas instaladas:
+- [Node.js](https://nodejs.org/en/) v18.17.1 o v20.3.0 en adelante (v19 no está soportada)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+## Stack
+
+- [Astro](https://astro.build/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## ¿Cómo usar?
+
+Para utilizar esta web como una plantilla, debes:
+
+1. Hacer **fork** a este repositorio
+   - Da clic en el botón de **fork** para crear una copia del proyecto.
+
+2. Clona el repositorio forkeado localmente:
+
+        git clone https://github.com/StreamByte/website.git
+
+3. Debes ingresar al repositorio, así que usa este comando:
+
+        cd StreamByte
+
+4. Instala las dependencias necesarias:
+
+    Con NPM:
+
+        npm install
+
+    Con PNPM:
+
+        pnpm install
+
+5. Ejecuta el proyecto en modo desarrollador para ver o realizar cambios:
+
+         npm run dev
+
+Si te interesa colaborar o realizar cambios, revisa la guia en [CONTRIBUTING.md](https://github.com/StreamByte/website/blob/main/CONTRIBUTING.md) y [DESIGN_SYSTEM.md](https://github.com/StreamByte/website/blob/main/CONTRIBUTING.md).
 
 ---
 
-## Comunidad
+## Ideado por [José Gonzz](https://gonzz.dev)
+
+¡Hola!, gracias por leer esto. Soy José, un diseñador web autodidácta y entusiasta del desarrollo Front-End. En Mayo de 2024 empecé a subir proyectos a GitHub. Espero compartir mi experiencia moviendo pixeles y estilando botones para poder ayudar a otros desarrolladores novatos.
+
+### Únete a la comunidad
+
 <p align="left">
    <a href="https://www.youtube.com/@josegonzz">
       <img alt="YouTube badge" title="Subscribe to my YouTube channel" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
@@ -14,37 +67,15 @@ Aprende y practica tus habilidades en HTML, CSS y JavaScript con los retos Front
       <img alt="Discord badge" title="Join my Discord server to talk" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
    </a>
       
+   <a href="https://www.linkedin.com/in/gonzz-dev/">
+      <img alt="LinkedIn badge" title="Check out my LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+   </a>
+      
+   <a href="https://www.instagram.com/joseg0nzz/">
+      <img alt="Instagram badge" title="I will post tech stuff I promise" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+   </a>
+   
+   <a href="https://x.com/joseg0nzz">
+      <img alt="X badge" title="Follow me on X" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
+   </a>
 </p>
-
-## Este proyecto se creará a través de la serie de videos de mi canal de YouTube:
-- [Creando un proyecto web COMPLETAMENTE desde cero | Parte 001](https://www.youtube.com/watch?v=6AnEljZjOlk)
-
-## Presentación
-**StreamByte** te invita a resolver sus retos de programación de acuerdo a tu nivel, tanto si buscas aprender con tus primeros proyectos, como si buscas practicar tus habilidades con diseños profesionales, estamos felices de apoyarte en el camino.
-
-Para comenzar, no hace falta experiencia, solamente tener un editor de código, internet y descargar los archivos. Te recomiendo las siguientes guías, tutoriales y herramientas:
-- Para conocer las bases de HTML y CSS:
-  - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-  - [LenguajeHTML](https://lenguajehtml.com/) | [LenguajeCSS](https://lenguajecss.com/) | [LenguajeJS](https://lenguajejs.com/) by [@ManzDev](https://manz.dev/)
-  - Nuestra comunidad en [Discord](https://discord.gg/4WfzyGyrpc) y videos tutoriales en [YouTube](https://www.youtube.com/@StreamByte-mx) (en progreso)
-- Editor de código recomendado:
-  - [VSCode](https://code.visualstudio.com/)
-- Navegador recomendado:
-  - [Brave](https://brave.com/es/download/) aunque puedes usar el que prefieras
-
-Una vez que se haya lanzado el proyecto, está sección se actualizará con herramientas creadas por y para la comunidad de StreamByte y del desarrollo Front-End.
-
-## Sistema de diseño y prototipo en Figma
-Puedes revisar el sistema de diseño actual y prototipo del proyecto en Figma:
-- [Enlace del diseño](https://www.figma.com/design/ZvkKIGeJNrgLf1ceCxRNSf/StreamByte?node-id=4279-2990&t=R167AOYKOrLduJoH-1)
-
-## Como usar la plantilla del reto
-Actualmente los retos se encuantran siendo creados.
-
-## Administración de tareas del proyecto
-Si te interesa saber como organizo mis proyectos y administro mis tareas, este proyecto está siendo documentado a través de Notion:
-- [Enlace del dashboard](https://purple-literature-335.notion.site/Workspace-Template-by-Gonzz-ac87302172ae40778d26cd83759874ba)
-- Si quieres adquirir la plantilla de organización proyectos que uso, puedes hacerlo [aquí](https://gonzz.gumroad.com/l/workspace)
-
-## Se aceptan colaboraciones
-Si tienes algun consejo, tip o retroalimentación que quieras darme o te interesa que trabajemos juntos, puedes contactarme en [Discord](https://discord.gg/4WfzyGyrpc), [Linkedin](https://www.linkedin.com/in/gonzz-dev/) y a través de mi [e-mail](mailto:contact@gonzz.dev).
