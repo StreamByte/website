@@ -24,7 +24,7 @@ a {
 
 .logo {
     display: flex;
-    width: 200px;
+    width: 150px;
     margin: auto;
 }
 
@@ -35,9 +35,9 @@ a {
 }
 
 .hero-display-text {
-    color: var(--primary-900);
+    color: var(--shades-black);
     font-size: var(--font-display-2);
-    font-weight: var(--font-black);
+    font-weight: var(--font-bold);
     font-style: italic;
     line-height: 80px;
     text-transform: uppercase;

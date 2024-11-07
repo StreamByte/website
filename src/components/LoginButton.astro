@@ -1,7 +1,7 @@
 <a href="#" class="button">
     <div class="button-content">
         <img src="/assets/icons/star.svg" alt="" class="icon">
-        Inicia sesión
+        <slot />
     </div>
 </a>
 
@@ -18,7 +18,7 @@
         text-decoration: none;
         margin-right: 100px;
         display: inline-block;
-        transition: transform 0.3s;
+        transition: 120ms;
         background-color: var(--shades-white);
         z-index: 1;
     }
@@ -33,21 +33,9 @@
         margin-right: 10px;
     }
 
-    .button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: var(--primary-900);
-        transition: transform 0.4s ease;
-        border-radius: 8px;
-        z-index: 0;
-    }
-
-    .button:hover::before {
+    .button:hover {
         transform: translate(8px, 8px);
+        box-shadow: 8px 8px 0 var(--primary-900);
     }
 
     .button:hover {
