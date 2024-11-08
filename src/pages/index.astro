@@ -3,7 +3,11 @@ import Banner from '../components/Banner.astro';
 import CardSlider from '../components/CardSlider.astro';
 import CommunityComponent from '../components/CommunityComponent.astro';
 import InstructionBento from '../components/InstructionBento.astro';
+import LoginButton from '../components/LoginButton.astro';
 import Layout from '../layouts/Layout.astro';
+import DiscordButton from '../components/DiscordButton.astro'
+import YouTubeButton from '../components/YouTubeButton.astro'
+import MainButton from '../components/MainButton.astro'
 
 import '../styles/main.css'
 ---
@@ -12,7 +16,7 @@ import '../styles/main.css'
 	<main>
 		<section class="hero-section">
 			<h1 class="hero-display-text">
-				Aprende desarrollo frontend con retos y proyectos reales.
+				Practica desarrollo frontend con retos y proyectos reales.
 			</h1>
 			<div class="cta-section">
 				<img src="/assets/images/process-preview-windows.png" alt="Captura de proceso | Diseño de hero" />
@@ -23,23 +27,19 @@ import '../styles/main.css'
 					<p class="description">
 						StreamByte es una página de retos de programación enfocados al Front-End. Mejora tus habilidades, aprende nuevas tecnologías, añade a tu portafolio y comparte tu progreso con la comunidad.
 					</p>
+					<div class="button-group">
+						<MainButton>Ver repositorio</MainButton>
+						<DiscordButton>Discord</DiscordButton>
+						<YouTubeButton>YouTube</YouTubeButton>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<Banner />
-
-		<section class="instruction-bento">
-			<h2 class="main-title">
-				¿Cómo Funciona?
-			</h2>
-			<InstructionBento />
-		</section>
-
-		<section class="favorite-challenges">
+		<section class="favorite-challenges" id="retos">
 			<div>
 				<h2 class="main-title">
-					Retos Favoritos
+					Retos Seleccionados
 				</h2>
 				<ul class="challenge-slider">
 					<CardSlider />
@@ -49,8 +49,68 @@ import '../styles/main.css'
 			</div>
 		</section>
 
+		<section class="instruction-bento">
+			<h2 class="main-title">
+				¿Cómo Funciona?
+			</h2>
+			<InstructionBento />
+		</section>
+
 		<section class="community-cta">
 			<CommunityComponent />
 		</section>
 	</main>
 </Layout>
+
+<style>
+	.hero-section {
+		padding: 0 100px;
+		display: block;
+		margin-top: 100px;
+	}
+
+	.hero-display-text {
+		color: var(--shades-black);
+		font-size: var(--font-display-2);
+		font-weight: var(--font-bold);
+		font-style: italic;
+		line-height: 80px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+	.cta-section {
+		display: flex;
+		gap: 24px;
+		margin-bottom: 100px;
+	}
+
+	.hero-cta {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.cta-title {
+		color: var(--shades-black);
+		font-size: var(--font-heading-2);
+		font-weight: var(--font-bold);
+		font-style: normal;
+	}
+
+	.description {
+		color: var(--shades-black);
+		font-family: var(--font-family-secondary);
+		font-size: var(--font-heading-6);
+		font-weight: var(--font-medium);
+		font-style: normal;
+		max-width: 524px;
+		margin-bottom: 24px;
+	}
+
+	.button-group {
+		display: flex;
+		gap: 12px;
+	}
+</style>

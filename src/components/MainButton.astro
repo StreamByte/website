@@ -1,12 +1,12 @@
-<a href="#" class="button">
+<a href="#" class="main-button">
     <div class="button-content">
-        <img src="/assets/icons/login-icon.svg" alt="" class="icon">
+        <img src="/assets/icons/github-dark.svg" alt="" class="star-icon">
         <slot />
     </div>
 </a>
 
 <style is:global>
-    .button {
+    .main-button {
         position: relative;
         color: var(--primary-900);
         padding: 8px 14px;
@@ -27,18 +27,18 @@
         position: relative;
     }
 
-    .icon {
+    .star-icon {
         width: 20px;
         margin-right: 10px;
     }
 
-    .button:hover {
+    .main-button:hover {
         transform: translate(8px, 8px);
         box-shadow: 8px 8px 0 var(--primary-900);
     }
 
-    .button:hover {
-        background-color: var(--primary-500);
+    .main-button:hover {
+        background-color: var(--shades-white);
         transform: translate(-4px, -4px);
     }
 </style>
