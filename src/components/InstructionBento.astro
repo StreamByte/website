@@ -9,7 +9,7 @@
                         ¡No más Tutorial Hell!
                     </h3>
                     <p class="benefit-text light-text">
-                        Todos hemos estado en esa situación en la que no puedes empezar ningún proyecto si no vas de la mano con un tutorial.
+                        Todos hemos estado en esa situación en la que no puedes empezar ningún proyecto si no vas de la mano de un tutorial. Es importante practicar las habilidades que aprendas.
                     </p>
                     <p class="benefit-text light-text">
                         La finalidad de StreamByte no es reemplazar los videos, sino darte una colección de retos de programación basados en prototipos de Figma diseñados y discutidos en comunidad. 
@@ -95,7 +95,7 @@
     }
 
     .instructive-card {
-        display: flex;
+        display: grid;
         width: 528px;
         height: 254px;
         border-radius: 20px;
@@ -104,14 +104,24 @@
     }
 
     .instructive-icon {
+        display: flex;
+        margin: auto;
         width: 320px;
         height: 320px;
         transform: rotate(-30deg);
-        z-index: 1;
+        z-index: 0;
+        margin-top: -280px;
+        margin-right: -120px;
+        transition: 120ms;
+    }
+
+    .instructive-icon:hover {
+        scale: 1.2;
+        translate: -20%;
     }
 
     .instructive-content {
-        padding: 24px 32px 32px 32px;
+        padding: 24px 0 32px 32px;
         width: 350px;
         z-index: 2;
     }

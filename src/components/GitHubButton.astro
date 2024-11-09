@@ -1,12 +1,12 @@
-<a href="#" class="main-button">
+<a href="https://github.com/StreamByte/website" target="_blank" rel="noreferrer" class="github-button">
     <div class="button-content">
-        <img src="/assets/icons/github-dark.svg" alt="" class="star-icon">
+        <img src="/assets/icons/github-dark.svg" alt="" class="github-icon">
         <slot />
     </div>
 </a>
 
 <style is:global>
-    .main-button {
+    .github-button {
         position: relative;
         color: var(--primary-900);
         padding: 8px 14px;
@@ -27,17 +27,17 @@
         position: relative;
     }
 
-    .star-icon {
+    .github-icon {
         width: 20px;
         margin-right: 10px;
     }
 
-    .main-button:hover {
+    .github-button:hover {
         transform: translate(8px, 8px);
         box-shadow: 8px 8px 0 var(--primary-900);
     }
 
-    .main-button:hover {
+    .github-button:hover {
         background-color: var(--shades-white);
         transform: translate(-4px, -4px);
     }

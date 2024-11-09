@@ -6,9 +6,9 @@
 
 <style is:global>
     .stack {
-    display: flex;
-    list-style: none;
-    gap: 6px;
+        display: flex;
+        list-style: none;
+        gap: 6px;
     }
 
     .tag {
@@ -16,15 +16,25 @@
         border-radius: 100px;
     }
 
-    .html {
-        background-color: var(--secondary-200);
-    }
-
-    .css {
-        background-color: var(--secondary-200);
-    }
-
+    .html,
+    .css,
     .js {
-        background-color: var(--neutral-300);
+        background-color: var(--secondary-200);
+        transition: 200ms;
+    }
+
+    .html:hover {
+        background-color: var(--html-color);
+        scale: 1.1;
+    }
+
+    .css:hover {
+        background-color: var(--css-color);
+        scale: 1.1;
+    }
+
+    .js:hover {
+        background-color: var(--js-color);
+        scale: 1.1;
     }
 </style>

@@ -29,7 +29,13 @@ import ChallengeLevel from "./ChallengeLevel.astro"
         background-color: var(--primary-100);
         border: 2px solid var(--primary-900);
         border-radius: 10px;
+        transition: 200ms;
     }
+
+    .card-container:hover {
+        box-shadow: 8px 8px 0 var(--primary-900);
+    }
+
     .challenge-image {
         max-width: 340px;
         border-radius: 10px 10px 0 0;
@@ -48,6 +54,7 @@ import ChallengeLevel from "./ChallengeLevel.astro"
     }
 
     .level-section {
+        display: flex;
         padding: 0 20px 15px 20px;
     }
 </style>
