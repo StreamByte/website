@@ -22,6 +22,10 @@ a {
     font-style: normal;
 }
 
+li {
+    list-style: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;

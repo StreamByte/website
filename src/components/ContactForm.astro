@@ -1,0 +1,244 @@
+---
+import '../styles/main.css'
+---
+<div class="section-container">
+    <div class="contact-container">
+        <h2 class="cta-title">¿Necesitas construir un proyecto web?</h2>
+        <p class="contact-description">Hola ✨ soy José Gonzz y me dedico a diseñar y desarrollar sitios web. Si buscas a alguien que construya tu idea y digitalice tu marca o emprendimiento, contáctame.</p>
+        <div class="social-icons">
+            <p class="social-text">¡Podemos conectar aqui!</p>
+            <ul class="icon-group">
+                <li>
+                    <img src="/assets/icons/linkedin.svg" alt="" class="social-icon" />
+                </li>
+    
+                <li>
+                    <img src="/assets/icons/github-dark.svg" alt="" class="social-icon" />
+                </li>
+    
+                <li>
+                    <img src="/assets/icons/discord.svg" alt="" class="social-icon" />
+                </li>
+    
+                <li>
+                    <img src="/assets/icons/youtube.svg" alt="" class="social-icon" />
+                </li>
+    
+                <li>
+                    <img src="/assets/icons/email.svg" alt="" class="social-icon" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="contact-form">
+        <form action="">
+
+            <h2 class="form-title">Hay que platicar 😘</h2>
+    
+            <div class="form-group">
+                <label for="name" class="sr-only">Nombre:</label>
+                <input type="text" name="name" placeholder="Nombre" />
+    
+                <label for="email" class="sr-only">E-mail:</label>
+                <input type="text" name="email" placeholder="tucorreo@email.com" />
+    
+                <label for="message" class="sr-only">Cuéntame tu idea o proyecto:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Cuéntame sobre ti o tu proyecto"></textarea>
+
+                
+                <ul class="checkbox-group">
+                    <h2 class="check-title">¿Cómo te puedo ayudar?</h2>
+
+                    <li class="check-group">
+                        <input type="checkbox" id="branding-check" class="checkbox" />
+                        <label for="branding-check">Diseño de marca</label>
+                    </li>
+
+                    <li class="check-group">
+                        <input type="checkbox" id="design-check" class="checkbox" />
+                        <label for="design-check">Diseño web</label>
+                    </li>
+                    
+                    <li class="check-group">
+                        <input type="checkbox" id="development-check" class="checkbox" />
+                        <label for="development-check">Desarrollo web</label>
+                    </li>
+
+                    <!-- Agregar categorías después -->
+
+                    <!-- <li class="check-group">
+                        <input type="checkbox" id="consultant-check" class="checkbox" />
+                        <label for="consultant-check">Consultoría</label>
+                    </li>
+
+                    <li class="check-group">
+                        <input type="checkbox" id="other-check" class="checkbox" />
+                        <label for="other-check">Otros</label>
+                    </li>     -->
+                </ul>
+    
+                <input class="btn" type="submit" value="Enviar" />
+            </div>
+    
+        </form>
+    </div>
+</div>
+
+
+<style is:global>
+    .section-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        gap: 90px;
+    }
+
+    .contact-container {
+        width: 462px;
+        height: 548px;
+    }
+
+    .contact-description {
+        font-family: var(--font-family-secondary);
+		font-size: var(--font-heading-6);
+		font-weight: var(--font-medium);
+		font-style: normal;
+    }
+
+    .social-text {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-paragraph-1);
+        font-weight: var(--font-medium);
+        margin-bottom: 8px;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 290px;
+    }
+
+    .icon-group {
+        display: flex;
+        list-style: none;
+        gap: 14px;
+    }
+
+    .social-icon {
+        transition: 120ms;
+    }
+
+    .social-icon:hover {
+        scale: 1.2;
+    }
+
+    .contact-form {
+        padding: 24px 32px 45px 32px;
+        width: 528px;
+        height: 548px;
+        background-color: var(--primary-400);
+        border-radius: 20px;
+    }
+
+    .form-title {
+        font-family: var(--font-family-primary);
+        font-size: var(--font-heading-3);
+        font-weight: var(--font-bold);
+        margin-bottom: 24px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border: 0;
+    }
+
+    label {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-heading-6);
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px 0px 10px 4px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid var(--primary-900);
+    }
+    
+    input[type="text"]::focus,
+    input[type="email"]::focus {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid var(--primary-900);
+    }
+    
+    input::placeholder, textarea::placeholder {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-paragraph-1);
+        font-weight: var(--font-semibold);
+        color: var(--shades-black);
+    }
+    
+    input::placeholder {
+        padding: 10px 0;
+    }
+
+    .check-title {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-paragraph-1);
+        font-weight: var(--font-bold);
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .check-group {
+        display: flex;
+        gap: 8px;
+    }
+
+    .checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        border: 2px solid var(--shades-black);
+        border-radius: 2px;
+        width: 20px;
+        height: 20px;
+        box-shadow: 1px 1px 0 var(--shades-black);
+    }
+
+    .btn {
+        padding: 8px 14px;
+        border: 2px solid var(--primary-900);
+        border-radius: 8px;
+        font-family: var(--font-family-primary);
+        font-size: var(--font-heading-6);
+        font-weight: var(--font-medium);
+        transition: 120ms;
+        background-color: var(--shades-white);
+        z-index: 1;
+    }
+
+    .btn:hover {
+        transform: translate(8px, 8px);
+        box-shadow: 8px 8px 0 var(--primary-900);
+        transform: translate(-4px, -4px);
+    }
+</style>
