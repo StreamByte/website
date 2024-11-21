@@ -2,6 +2,7 @@
     <li class="html tag">HTML</li>
     <li class="css tag">CSS</li>
     <li class="js tag">JS</li>
+    <!-- <li class="nojs tag">JS</li> -->
 </ul>
 
 <style is:global>
@@ -14,12 +15,20 @@
     .tag {
         padding: 10px 16px;
         border-radius: 100px;
+        color: var(--shades-black);
+        font-size: var(--font-paragraph-1s);
+        font-weight: var(--font-bold);
     }
 
     .html,
     .css,
     .js {
-        background-color: var(--secondary-200);
+        background-color: var(--primary-400);
+        transition: 200ms;
+    }
+
+    .nojs {
+        background-color: var(--neutral-300);
         transition: 200ms;
     }
 
@@ -35,6 +44,10 @@
 
     .js:hover {
         background-color: var(--js-color);
+        scale: 1.1;
+    }
+
+    .nojs:hover {
         scale: 1.1;
     }
 </style>

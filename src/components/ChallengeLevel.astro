@@ -11,20 +11,26 @@
 
 <style>
     .level-container {
-        margin-left: 16px;
+        margin-left: 18px;
     }
 
     .level-name {
         font-size: var(--font-paragraph-1s);
         font-weight: var(--font-bold);
+        margin-bottom: 2px;
     }
 
     .star-container {
         display: flex;
-        gap: 6px;
+        gap: 8px;
     }
 
     .star-icon {
-        width: 15px;
+        width: 16px;
+        transition: 200ms;
+    }
+
+    .star-icon:hover {
+        scale: 1.3;
     }
 </style>

@@ -7,32 +7,45 @@ import '../styles/main.css'
         <p class="contact-description">Hola ✨ soy José Gonzz y me dedico a diseñar y desarrollar sitios web. Si buscas a alguien que construya tu idea y digitalice tu marca o emprendimiento, contáctame.</p>
         <div class="social-icons">
             <p class="social-text">¡Podemos conectar aqui!</p>
+
+            <!-- TODO: Agregar tooltip con video preview de cada página -->
+
             <ul class="icon-group">
                 <li>
-                    <img src="/assets/icons/linkedin.svg" alt="" class="social-icon" />
+                    <a href="https://www.linkedin.com/in/gonzz-dev/" target="_blank" rel="no-referrer">
+                        <img src="/assets/icons/linkedin.svg" alt="" class="social-icon" />
+                    </a>
                 </li>
     
                 <li>
-                    <img src="/assets/icons/github-dark.svg" alt="" class="social-icon" />
+                    <a href="https://github.com/gonzzdev" target="_blank" rel="no-referrer">
+                        <img src="/assets/icons/github-dark.svg" alt="" class="social-icon" />
+                    </a>
                 </li>
     
                 <li>
-                    <img src="/assets/icons/discord.svg" alt="" class="social-icon" />
+                    <a href="https://discord.gg/xWKrfDKkCY" target="_blank" rel="no-referrer">
+                        <img src="/assets/icons/discord.svg" alt="" class="social-icon" />
+                    </a>
                 </li>
     
                 <li>
-                    <img src="/assets/icons/youtube.svg" alt="" class="social-icon" />
+                    <a href="https://www.youtube.com/@joseg0nzz" target="_blank" rel="no-referrer">
+                        <img src="/assets/icons/youtube.svg" alt="" class="social-icon" />
+                    </a>
                 </li>
     
                 <li>
-                    <img src="/assets/icons/email.svg" alt="" class="social-icon" />
+                    <a href="mailto:contact@gonzz.dev" target="_blank" rel="no-referrer">
+                        <img src="/assets/icons/email.svg" alt="" class="social-icon" />
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
     
     <div class="contact-form">
-        <form action="">
+        <form action="https://formsubmit.co/design.gonzz@gmail.com" method="POST">
 
             <h2 class="form-title">Hay que platicar 😘</h2>
     
@@ -47,27 +60,27 @@ import '../styles/main.css'
                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Cuéntame sobre ti o tu proyecto"></textarea>
 
                 
-                <ul class="checkbox-group">
+                <!-- TODO: Habilitar grupo de checkbox -->
+
+                <!-- <ul class="checkbox-group">
                     <h2 class="check-title">¿Cómo te puedo ayudar?</h2>
 
                     <li class="check-group">
-                        <input type="checkbox" id="branding-check" class="checkbox" />
+                        <input type="checkbox" name="checkbox" id="branding-check" class="checkbox" />
                         <label for="branding-check">Diseño de marca</label>
                     </li>
 
                     <li class="check-group">
-                        <input type="checkbox" id="design-check" class="checkbox" />
+                        <input type="checkbox" name="checkbox" id="design-check" class="checkbox" />
                         <label for="design-check">Diseño web</label>
                     </li>
                     
                     <li class="check-group">
-                        <input type="checkbox" id="development-check" class="checkbox" />
+                        <input type="checkbox" name="checkbox" id="development-check" class="checkbox" />
                         <label for="development-check">Desarrollo web</label>
                     </li>
 
-                    <!-- Agregar categorías después -->
-
-                    <!-- <li class="check-group">
+                    <li class="check-group">
                         <input type="checkbox" id="consultant-check" class="checkbox" />
                         <label for="consultant-check">Consultoría</label>
                     </li>
@@ -75,10 +88,15 @@ import '../styles/main.css'
                     <li class="check-group">
                         <input type="checkbox" id="other-check" class="checkbox" />
                         <label for="other-check">Otros</label>
-                    </li>     -->
-                </ul>
+                    </li>    
+                </ul> -->
     
                 <input class="btn" type="submit" value="Enviar" />
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://streambyte.mx" />
+
             </div>
     
         </form>
@@ -180,7 +198,8 @@ import '../styles/main.css'
     }
     
     input[type="text"]::focus,
-    input[type="email"]::focus {
+    input[type="email"]::focus,
+    textarea {
         background-color: transparent;
         border: none;
         border-bottom: 2px solid var(--primary-900);
@@ -200,7 +219,7 @@ import '../styles/main.css'
     .check-title {
         font-family: var(--font-family-secondary);
         font-size: var(--font-paragraph-1);
-        font-weight: var(--font-bold);
+        font-weight: var(--font-semibold);
     }
 
     .checkbox-group {
@@ -234,6 +253,8 @@ import '../styles/main.css'
         transition: 120ms;
         background-color: var(--shades-white);
         z-index: 1;
+        margin-top: 24px;
+        cursor: pointer;
     }
 
     .btn:hover {
