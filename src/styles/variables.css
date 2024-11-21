@@ -75,3 +75,79 @@
     --font-bold: 700;
     --font-black: 800;
 }
+
+:root {
+    /* Colores principales */
+    --primary-50: #E9FFF6;
+    --primary-100: #CAFFE7;
+    --primary-200: #99FFD4;
+    --primary-300: #58FDC1;
+    --primary-400: #36F2B3;
+    --primary-500: #00D891;
+    --primary-600: #00B078;
+    --primary-700: #008D64;
+    --primary-800: #006F50;
+    --primary-900: #003428;
+
+    /* Colores secundarios */
+    --secondary-50: #E3EFFE;
+    --secondary-100: #C8DEFC;
+    --secondary-200: #91BEFA;
+    --secondary-300: #599EF7;
+    --secondary-400: #3E8DF5;
+    --secondary-500: #227DF4;
+    --secondary-600: #0C61D0;
+    --secondary-700: #0B4A9C;
+    --secondary-800: #073D84;
+    --secondary-900: #020F21;
+
+    /* Colores neutrales */
+    --neutral-50: #F3F6F5;
+    --neutral-100: #E2E9E6;
+    --neutral-200: #C4D3CE;
+    --neutral-300: #9FB6B0;
+    --neutral-400: #74938C;
+    --neutral-500: #54756E;
+    --neutral-600: #405B56;
+    --neutral-700: #334946;
+    --neutral-800: #334946;
+    --neutral-900: #23312F;
+
+    /* Blanco y negro */
+    --shades-white: #EDEFEE;
+    --shades-black: #000A0C;
+
+    /* Acentos de color */
+    --star-color: #F4AB22;
+    --html-color: #F06529;
+    --css-color: #3C99DC;
+    --js-color: #F0DB4F;
+
+    /* Fuentes tipográficas */
+    --font-family-primary: 'degular', sans-serif;
+    --font-family-secondary: 'Inter', sans-serif;
+
+    /* Tamaño de fuente */
+    --font-display: 120px;
+    --font-display-2: 100px;
+    --font-size-8xl: 62px;
+    --font-size-7xl: 54px;
+    --font-size-6xl: 48px;
+    --font-size-5xl: 44px;
+    --font-size-4xl: 40px;
+    --font-size-3xl: 36px;
+    --font-size-2xl: 32px;
+    --font-size-xl: 29px;
+    --font-size-lg: 25px;
+    --font-size-md: 20px;
+    --font-size-base: 18px;
+    --font-size-sm: 16px;
+    --font-size-xs: 12px;
+
+    /* Peso de fuente */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 800;
+}
