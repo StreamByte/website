@@ -67,5 +67,3 @@ Aségurate de tener las siguientes herramientas instaladas:
 3. Ejecuta el proyecto en modo desarrollador para ver o realizar cambios:
 
          npm run dev
-
-4. Si te interesa colaborar o realizar cambios, revisa la guia en [CONTRIBUTING.md](https://github.com/StreamByte/website/blob/main/CONTRIBUTING.md)
