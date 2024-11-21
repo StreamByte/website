@@ -22,46 +22,20 @@ a {
     font-style: normal;
 }
 
+li {
+    list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 .logo {
     display: flex;
-    width: 200px;
+    width: 150px;
     margin: auto;
-}
-
-.hero-section {
-    padding: 0 100px;
-    display: block;
-    margin-top: 100px;
-}
-
-.hero-display-text {
-    color: var(--primary-900);
-    font-size: var(--font-display-2);
-    font-weight: var(--font-black);
-    font-style: italic;
-    line-height: 80px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.cta-section {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 100px;
-}
-
-.hero-cta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cta-title {
-    color: var(--shades-black);
-    font-size: var(--font-heading-2);
-    font-weight: var(--font-bold);
-    font-style: normal;
 }
 
 .main-title {
@@ -82,15 +56,6 @@ a {
     margin-top: 100px;
     margin-bottom: 32px;
 }
-
-.description {
-    color: var(--shades-black);
-    font-family: var(--font-family-secondary);
-    font-size: var(--font-heading-6);
-    font-weight: var(--font-medium);
-    font-style: normal;
-}
-
 
 .favorite-challenges {
     justify-content: center;

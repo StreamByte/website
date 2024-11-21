@@ -1,12 +1,12 @@
-<a href="#" class="button">
+<a href="https://discord.gg/xWKrfDKkCY" target="_blank" rel="noreferrer" class="discord-button">
     <div class="button-content">
-        <img src="/assets/icons/login-icon.svg" alt="" class="icon">
+        <img src="/assets/icons/discord.svg" alt="" class="discord-icon">
         <slot />
     </div>
 </a>
 
 <style is:global>
-    .button {
+    .discord-button {
         position: relative;
         color: var(--primary-900);
         padding: 8px 14px;
@@ -27,15 +27,19 @@
         position: relative;
     }
 
-    .icon {
-        width: 20px;
+    .discord-icon {
+        width: 24px;
         margin-right: 10px;
     }
 
-    .button:hover {
+    .discord-button:hover {
         transform: translate(8px, 8px);
         box-shadow: 8px 8px 0 var(--primary-900);
-        background-color: var(--primary-400);
+    }
+
+    .discord-button:hover {
+        background-color: var(--shades-white);
         transform: translate(-4px, -4px);
+        
     }
 </style>

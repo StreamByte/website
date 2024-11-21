@@ -6,65 +6,17 @@ import ProButton from '../components/ProButton.astro'
     <!-- Sección de instrucciones -->
     <div class="bento-container">
         <ul class="instructions">
-            <li class="instructive-card download-card">
-                <img src="/assets/images/figma-icon-3d.png" alt="" class="instructive-icon" />
-                <div class="instructive-content">
-                    <h3 class="instructive-title light-title">
-                        Descarga
-                    </h3>
-                    <p class="instructive-text light-text">
-                        Todos los elementos gráficos, sistema de diseño y prototipo creado profesionalmente en Figma, las instrucciones del reto y plantilla inicial del sitio web.
-                    </p>
-                </div>
-            </li>
-            <li class="instructive-card resolve-card">
-                <img src="/assets/images/pickaxe-icon-3d.png" alt="" class="instructive-icon" />
-                <div class="instructive-content">
-                    <h3 class="instructive-title light-title">
-                        Resuelve
-                    </h3>
-                    <p class="instructive-text light-text">
-                        Puedes usar HTML, CSS y JavaScript para realizar los retos siguiendo el tutorial. Aunque eres libre de resolverlo usando tus tecnologías favoritas.
-                    </p>
-                </div>
-            </li>
-            <li class="instructive-card share-card">
-                <img src="/assets/images/at-icon-3d.png" alt="" class="instructive-icon" />
-                <div class="instructive-content">
-                    <h3 class="instructive-title dark-title">
-                        Comparte
-                    </h3>
-                    <p class="instructive-text dark-text">
-                        Agrega el reto a tu portafolio o puedes utilizarlo como punto de partida para proyectos nuevos. Comparte con la comunidad para recibir ayuda y feedback.
-                    </p>
-                </div>
-            </li>
-            <li class="instructive-card develop-card">
-                <img src="/assets/images/brush-icon-3d.png" alt="" class="instructive-icon" />
-                <div class="instructive-content">
-                    <h3 class="instructive-title dark-title">
-                        Mejora
-                    </h3>
-                    <p class="instructive-text dark-text">
-                        Añade más funcionalidades, interacciones, animaciones o cualquier cosa que desees agregar. Las soluciones con más votos se premiarán.
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    
-<!-- Sección de beneficios -->
-    <div class="bento-container">
-        <ul class="instructions">
+
             <li class="benefit-card howto-card">
                 <div class="benefit-content">
                     <h3 class="benefit-title light-title">
                         ¡No más Tutorial Hell!
                     </h3>
                     <p class="benefit-text light-text">
-                        Los tutoriales son muy buenos, pero no podemos depender de ellos para todos nuestros proyectos, practicar con diseños reales y resolver utilizando nuestros propios métodos ayuda mucho a salir del “Tutorial Hell”.
+                        Todos hemos estado en esa situación en la que no puedes empezar ningún proyecto si no vas de la mano de un tutorial. Es importante practicar las habilidades que aprendas.
                     </p>
                     <p class="benefit-text light-text">
+<<<<<<< HEAD
                         Así que StreamByte te invita a usar el lenguaje de tu preferencia, añadir animaciones, elaborar más páginas o cambiar el diseño, las soluciones más votadas por la comunidad aparecerán en este sitio.
                     </p>
                     <ProButton />
@@ -83,44 +35,116 @@ import ProButton from '../components/ProButton.astro'
                     </p>
                     <p class="benefit-text dark-text">
                         Si quieres subscribirte a la newsletter con retos exclusivos, tener acceso a retos premium y otras sorpresas más, considera ser miembro Pro.
+=======
+                        La finalidad de StreamByte no es reemplazar los videos, sino darte una colección de retos de programación basados en prototipos de Figma diseñados y discutidos en comunidad. 
+>>>>>>> e911ff780d0d51a606ba7784c624099cc85c3324
                     </p>
                     <ProButton />
                 </div>
             </li>
+
+            <div class="instructive-container">
+                <li class="instructive-card download-card">
+                    <div class="instructive-content">
+                        <h3 class="instructive-title light-title">
+                            Descarga
+                        </h3>
+                        <p class="instructive-text light-text">
+                            Todos los elementos gráficos, sistema de diseño y prototipo creado profesionalmente en Figma, las instrucciones del reto y plantilla inicial del sitio web.
+                        </p>
+                    </div>
+                    <img src="/assets/images/figma-icon-3d.png" alt="" class="instructive-icon" />
+                </li>
+                <li class="instructive-card resolve-card">
+                    <div class="instructive-content">
+                        <h3 class="instructive-title light-title">
+                            Resuelve
+                        </h3>
+                        <p class="instructive-text light-text">
+                            Puedes usar HTML, CSS y JavaScript para realizar los retos siguiendo el tutorial. Aunque eres libre de resolverlo usando tus tecnologías favoritas.
+                        </p>
+                    </div>
+                    <img src="/assets/images/pickaxe-icon-3d.png" alt="" class="instructive-icon" />
+                </li>
+            </div>
+
+            <div class="instructive-container">
+                <li class="instructive-card share-card">
+                    <div class="instructive-content">
+                        <h3 class="instructive-title dark-title">
+                            Comparte
+                        </h3>
+                        <p class="instructive-text dark-text">
+                            Agrega el reto a tu portafolio o puedes utilizarlo como punto de partida para proyectos nuevos. Comparte con la comunidad para recibir ayuda y feedback.
+                        </p>
+                    </div>
+                    <img src="/assets/images/at-icon-3d.png" alt="" class="instructive-icon" />
+                </li>
+                <li class="instructive-card develop-card">
+                    <div class="instructive-content">
+                        <h3 class="instructive-title dark-title">
+                            Mejora
+                        </h3>
+                        <p class="instructive-text dark-text">
+                            Añade más funcionalidades, interacciones, animaciones o cualquier cosa que desees agregar. Las soluciones con más votos se premiarán.
+                        </p>
+                    </div>
+                    <img src="/assets/images/brush-icon-3d.png" alt="" class="instructive-icon" />
+                </li>
+            </div>
         </ul>
     </div>
+    
 </div>
 
 <style is:global>
-    .bento-section {
+    .bento-container {
         display: flex;
         justify-content: center;
-        gap: 24px;
-        margin-bottom: 76px;
     }
 
-    .instruction-bento {
-        margin-left: 100px;
-        margin-right: 100px;
+    .bento-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .instructive-container {
+        display: flex;
+        gap: 24px;
     }
 
     .instructive-card {
-        display: flex;
+        display: grid;
         width: 528px;
         height: 254px;
         border-radius: 20px;
         margin-bottom: 24px;
+        overflow: hidden;
     }
 
     .instructive-icon {
-        width: 150px;
-        height: 150px;
-        margin-right: 9px;
+        display: flex;
         margin: auto;
+        width: 320px;
+        height: 320px;
+        transform: rotate(-30deg);
+        z-index: 0;
+        margin-top: -280px;
+        margin-right: -120px;
+        transition: 120ms;
+    }
+
+    .instructive-icon:hover {
+        scale: 1.2;
+        translate: -20%;
     }
 
     .instructive-content {
-        padding: 36px 20px 0 0;
+        padding: 24px 0 32px 32px;
+        width: 350px;
+        z-index: 2;
     }
 
     .instructive-title {
@@ -137,15 +161,15 @@ import ProButton from '../components/ProButton.astro'
     }
 
     .download-card {
-        background-color: var(--secondary-900);
+        background-color: var(--secondary-700);
     }
 
     .resolve-card {
-        background-color: var(--secondary-800);
+        background-color: var(--secondary-700);
     }
 
     .share-card {
-        background-color: var(--secondary-600);
+        background-color: var(--secondary-400);
     }
 
     .develop-card {
@@ -154,14 +178,14 @@ import ProButton from '../components/ProButton.astro'
 
     .benefit-card {
         display: flex;
-        width: 528px;
-        height: 532px;
+        width: 1080px;
+        height: 254px;
         border-radius: 20px;
         margin-bottom: 24px;
     }
 
     .benefit-content {
-        padding: 36px 20px 32px 20px;
+        padding: 24px 32px 32px 32px;
     }
 
     .benefit-title {
@@ -180,11 +204,7 @@ import ProButton from '../components/ProButton.astro'
     }
 
     .howto-card {
-        background-color: var(--primary-900);
-    }
-
-    .pro-card {
-        background-color: var(--primary-200);
+        background-color: var(--secondary-900);
     }
 
     .light-title {

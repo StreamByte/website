@@ -3,36 +3,44 @@ import LoginButton from "./LoginButton.astro"
 ---
 
 <header class="header">
-    <a href="/#" class="header-icon">
-        <img src="/assets/images/logotype.png" alt="Logotipo de StreamByte" class="logo" />
+    <a href="/#" class="header-logo">
+        <img src="/assets/images/logo-main.png" alt="Logotipo de StreamByte" class="logo" />
     </a>
     <nav class="navbar">
-        <ul class="nav-items">
-            <a href="/retos">
+        <ul class="items-container">
+            <a href="/#" class="nav-items">
+                <li>Home</li>
+            </a>
+            <a href="/#retos" class="nav-items">
                 <li>Retos</li>
             </a>
-            <a href="">
+            <a href="/#" class="disabled-item nav-items">
                 <li>Soluciones</li>
             </a>
-            <a href="">
-                <li>Pro</li>
+            <a href="/#contacto" class="nav-items">
+                <li>Contacto</li>
             </a>
         </ul>
-        <LoginButton />
+        <LoginButton>Iniciar sesión</LoginButton>
     </nav>
 </header>
 
 <style is:global>
     .header {
-        height: 100px;
+        height: 75px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-bottom: 2px solid var(--primary-900);
     }
 
-    .header-icon {
+    .header-logo {
         margin-left: 100px;
+        transition: 120ms;
+    }
+
+    .header-logo:hover {
+        scale: 1.1;
     }
 
     .navbar {
@@ -40,14 +48,31 @@ import LoginButton from "./LoginButton.astro"
         align-items: center;
         justify-content: space-between;
         gap: 40px;
+        margin-right: 100px;
     }
 
-    .nav-items, li {
+    .items-container {
         display: flex;
+        gap: 40px;
+    }
+
+    .nav-items {
         color: var(--shades-black);
         font-size: var(--font-heading-6);
         font-weight: var(--font-medium);
         list-style: none;
-        gap: 40px;
+        transition: 120ms;
     }
+
+    .nav-items:hover {
+        color: var(--primary-500);
+        transform: scale(1.05);
+    }
+
+    .disabled-item {
+        color: var(--neutral-500);
+        filter: blur(1.5px);
+    }
+
+
 </style>
