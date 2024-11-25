@@ -1,5 +1,5 @@
 ---
-import LoginButton from "./LoginButton.astro"
+import ButtonGitHub from "./ButtonGitHub.astro"
 ---
 
 <header class="header">
@@ -17,11 +17,11 @@ import LoginButton from "./LoginButton.astro"
             <a href="/#" class="disabled-item nav-items">
                 <li>Soluciones</li>
             </a>
-            <!-- <a href="/#contacto" class="nav-items">
+            <a href="/#contacto" class="nav-items">
                 <li>Contacto</li>
-            </a> -->
+            </a>
         </ul>
-        <LoginButton>Contacto</LoginButton>
+        <ButtonGitHub>Deja una estrella</ButtonGitHub>
     </nav>
 </header>
 
@@ -57,9 +57,11 @@ import LoginButton from "./LoginButton.astro"
     }
 
     .nav-items {
+        font-family: var(--font-primary);
+        font-weight: var(--font-bold);
+        font-size: var(--font-base);
         color: var(--shades-black);
-        font-size: var(--font-heading-6);
-        font-weight: var(--font-medium);
+        text-decoration: none;
         list-style: none;
         transition: 120ms;
     }

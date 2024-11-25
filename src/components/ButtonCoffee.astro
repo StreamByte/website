@@ -1,0 +1,41 @@
+<a href="https://discord.gg/xWKrfDKkCY" target="_blank" rel="noreferrer" class="coffee-button">
+    <div class="button-content">
+        <img src="/assets/icons/coffee.svg" alt="" class="coffee-icon">
+        <slot />
+    </div>
+</a>
+
+<style is:global>
+    .coffee-button {
+        font-family: var(--font-primary);
+        font-size: var(--font-base);
+        font-weight: var(--font-bold);
+        background-color: var(--shades-white);
+        color: var(--primary-900);
+        border: 2px solid var(--primary-900);
+        border-radius: 8px;
+        position: relative;
+        padding: 8px 14px;
+        text-decoration: none;
+        display: inline-block;
+        transition: 120ms;
+        z-index: 1;
+    }
+
+    .button-content {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .coffee-icon {
+        width: 24px;
+        margin-right: 10px;
+    }
+
+    .coffee-button:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 4px 4px 0 var(--primary-900);
+        background-color: var(--primary-300);
+    }
+</style>

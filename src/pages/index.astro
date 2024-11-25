@@ -2,11 +2,11 @@
 import CardSlider from '../components/CardSlider.astro';
 import CommunityComponent from '../components/CommunityComponent.astro';
 import ContactForm from '../components/ContactForm.astro';
-import DiscordButton from '../components/DiscordButton.astro'
-import GitHubButton from '../components/GitHubButton.astro'
+import ButtonDiscord from '../components/ButtonDiscord.astro'
 import InstructionBento from '../components/InstructionBento.astro';
 import Layout from '../layouts/Layout.astro';
-import YouTubeButton from '../components/YouTubeButton.astro'
+import ButtonYouTube from '../components/ButtonYouTube.astro'
+import ButtonCoffee from '../components/ButtonCoffee.astro'
 
 import '../styles/main.css'
 ---
@@ -15,7 +15,7 @@ import '../styles/main.css'
 	<main>
 		<section class="hero-section">
 			<h1 class="hero-display-text">
-				Practica desarrollo frontend con retos y proyectos reales.
+				Retos Frontend diseñados a medida
 			</h1>
 			<div class="cta-section">
 				<img src="/assets/images/process-preview-windows.png" alt="Captura de proceso | Diseño de hero" />
@@ -27,9 +27,9 @@ import '../styles/main.css'
 						StreamByte es una página de retos de programación enfocados al Front-End. Mejora tus habilidades, aprende nuevas tecnologías, añade a tu portafolio y comparte tu progreso con la comunidad.
 					</p>
 					<div class="button-group">
-						<DiscordButton>Discord</DiscordButton>
-						<YouTubeButton>YouTube</YouTubeButton>
-						<GitHubButton>GitHub</GitHubButton>
+						<ButtonDiscord>Comunidad</ButtonDiscord>
+						<ButtonYouTube>Último video</ButtonYouTube>
+						<ButtonCoffee>Apoya al proyecto</ButtonCoffee>
 					</div>
 				</div>
 			</div>
@@ -42,15 +42,13 @@ import '../styles/main.css'
 				</h2>
 				<ul class="challenge-slider">
 					<CardSlider />
-					<CardSlider />
-					<CardSlider />
 				</ul>
 			</div>
 		</section>
 
 		<section class="instruction-bento">
 			<h2 class="main-title">
-				¿Cómo Funciona?
+				instrucciones
 			</h2>
 			<InstructionBento />
 		</section>
@@ -73,11 +71,12 @@ import '../styles/main.css'
 	}
 
 	.hero-display-text {
-		color: var(--shades-black);
+		font-family: var(--font-primary);
 		font-size: var(--font-display-2);
-		font-weight: var(--font-bold);
+		font-weight: var(--font-black);
+		color: var(--shades-black);
 		font-style: italic;
-		line-height: 80px;
+		line-height: 96px;
 		text-transform: uppercase;
 		text-align: center;
 		margin-bottom: 100px;
@@ -97,19 +96,20 @@ import '../styles/main.css'
 	}
 
 	.cta-title {
-		color: var(--shades-black);
-		font-size: var(--font-heading-2);
+		font-family: var(--font-primary);
+		font-size: var(--font-6xl);
 		font-weight: var(--font-bold);
+		color: var(--shades-black);
 		font-style: normal;
 		line-height: 48px;
 		margin-bottom: 12px;
 	}
 
 	.description {
-		color: var(--shades-black);
-		font-family: var(--font-family-secondary);
-		font-size: var(--font-heading-6);
+		font-family: var(--font-secondary);
+		font-size: var(--font-md);
 		font-weight: var(--font-medium);
+		color: var(--shades-black);
 		font-style: normal;
 		max-width: 524px;
 		margin-bottom: 24px;
@@ -125,10 +125,14 @@ import '../styles/main.css'
         margin-right: 100px;
     }
 
+	.community-cta {
+		display: flex;
+		margin: auto;
+	}
+
 	.contact-cta {
         display: flex;
+		margin: auto;
         width: 1080px;
-        margin-left: 135px;
-        margin-right: 135px;
     }
 </style>

@@ -7,23 +7,24 @@
 
 <style is:global>
     .discord-button {
-        position: relative;
+        font-family: var(--font-primary);
+        font-size: var(--font-base);
+        font-weight: var(--font-bold);
+        background-color: var(--shades-white);
         color: var(--primary-900);
-        padding: 8px 14px;
         border: 2px solid var(--primary-900);
         border-radius: 8px;
-        font-family: var(--font-family-primary);
-        font-size: var(--font-heading-6);
-        font-weight: var(--font-medium);
+        position: relative;
+        padding: 8px 14px;
         text-decoration: none;
         display: inline-block;
         transition: 120ms;
-        background-color: var(--shades-white);
         z-index: 1;
     }
 
     .button-content {
         display: flex;
+        align-items: center;
         position: relative;
     }
 
@@ -33,13 +34,8 @@
     }
 
     .discord-button:hover {
-        transform: translate(8px, 8px);
-        box-shadow: 8px 8px 0 var(--primary-900);
-    }
-
-    .discord-button:hover {
-        background-color: var(--shades-white);
         transform: translate(-4px, -4px);
-        
+        box-shadow: 4px 4px 0 var(--primary-900);
+        background-color: var(--shades-white);
     }
 </style>

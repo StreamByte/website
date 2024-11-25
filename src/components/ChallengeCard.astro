@@ -2,24 +2,90 @@
 import StackTag from "./StackTag.astro";
 import ChallengeLevel from "./ChallengeLevel.astro"
 
+const STACK = {
+    HTML: {
+        name: "HTML",
+        class: "html tag"
+    },
+
+    CSS: {
+        name: "CSS",
+        class: "css tag"
+    },
+
+    JAVASCRIPT: {
+        name: "JS",
+        class: "js tag"
+    },
+
+    NOJAVASCRIPT: {
+        name: "JS",
+        class: "nojs tag"
+    },
+}
+
+const CHALLENGES = [
+    {
+        image: "/assets/images/reto-01.png",
+        link: "#",
+        title: "Tarjeta de producto",
+        description: "El reto de calentamiento favorito para practicar HTML y CSS. Solo necesitas conocer las bases",
+        stack: [STACK.HTML, STACK.CSS, STACK.NOJAVASCRIPT],
+        level: "",
+    },
+
+    {
+        image: "/assets/images/reto-02.png",
+        link: "#",
+        title: "Componente de encuesta",
+        description: "Un reto de HTML y CSS que sirve para practicar flexbox y manejo de estados. Recuerda siempre mirar el prototipo",
+        stack: "",
+        level: "",
+    },
+
+    {
+        image: "/assets/images/reto-03.png",
+        link: "#",
+        title: "Página de FAQ",
+        description: "Una página de preguntas frecuentes con diseño responsive y animaciones con CSS",
+        stack: "",
+        level: "",
+    },
+]
 ---
-<div class="card-container">
-    <div class="card-content">
-        <img src="/assets/images/Reto-01.png" class="challenge-image" />
-        <h3 class="challenge-title">
-            Previsualización de producto
-        </h3>
-        <p class="challenge-description">
-            En este reto, practicarás las bases de HTML y CSS creando una tarjeta de previsualización de producto.
-        </p>
-    </div>
-    <div class="level-section">
-        <StackTag />
-        <ChallengeLevel />
-    </div>
-</div>
+{
+    CHALLENGES.map(({ image, link, title, description, stack, level }) => (
+        <a href={link} class="anchor-container">
+            <div class="card-container">
+                <div class="card-content">
+                    <img src={image} class="challenge-image" />
+                    <h3 class="challenge-title">
+                        {title}
+                    </h3>
+                    <p class="challenge-description">
+                        {description}.
+                    </p>
+                </div>
+                <div class="level-section">
+                    {/* <ul class="stack">
+                        {stack.map((stack) => (
+                            <li class={stack.class}>{stack.name}</li>
+                        ))}
+                    </ul> */}
+                    <StackTag />
+                    <ChallengeLevel />
+                </div>
+            </div>
+        </a>
+    ))
+}
 
 <style is:global>
+    .anchor-container {
+        color: var(--shades-black);
+        text-decoration: none;
+    }
+
     .card-container {
         display: flex;
         flex-direction: column;
@@ -30,12 +96,12 @@ import ChallengeLevel from "./ChallengeLevel.astro"
         border: 2px solid var(--primary-900);
         border-radius: 10px;
         transition: 200ms;
-        cursor: pointer;
     }
 
     .card-container:hover {
-        box-shadow: 8px 8px 0 var(--primary-900);
-        background-color: var(--primary-100);
+        transform: translate(-6px, -6px);
+        box-shadow: 6px 6px 0 var(--primary-900);
+        background-color: var(--primary-50);
     }
 
     .challenge-image {
@@ -44,19 +110,72 @@ import ChallengeLevel from "./ChallengeLevel.astro"
     }
 
     .challenge-title {
-        font-size: var(--font-heading-5);
+        font-family: var(--font-primary);
+        font-size: var(--font-xl);
         font-weight: var(--font-bold);
+        line-height: 24px;
+        width: 304px;
         padding: 20px 0 8px 20px;
     }
 
     .challenge-description {
-        font-size: var(--font-paragraph-1);
+        font-family: var(--font-secondary);
+        font-size: var(--font-base);
         font-weight: var(--font-medium);
         padding: 0 20px 0 20px;
     }
 
     .level-section {
         display: flex;
+        align-items: center;
         padding: 0 20px 15px 20px;
+    }
+
+    .stack {
+        display: flex;
+        list-style: none;
+        gap: 8px;
+    }
+
+    .tag {
+        font-family: var(--font-secondary);
+        font-size: var(--font-sm);
+        font-weight: var(--font-bold);
+        color: var(--shades-black);
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 100px;
+    }
+
+    .html,
+    .css,
+    .js {
+        background-color: var(--primary-400);
+        transition: 200ms;
+    }
+
+    .nojs {
+        background-color: var(--neutral-300);
+        transition: 200ms;
+    }
+
+    .html:hover {
+        background-color: var(--html-color);
+        scale: 1.1;
+    }
+
+    .css:hover {
+        background-color: var(--css-color);
+        scale: 1.1;
+    }
+
+    .js:hover {
+        background-color: var(--js-color);
+        scale: 1.1;
+    }
+
+    .nojs:hover {
+        scale: 1.1;
     }
 </style>

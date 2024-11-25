@@ -10,16 +10,11 @@
 
 html {
     background-color: var(--shades-white);
-    font-family: var(--font-family-primary);
+    font-family: var(--font-primary);
 }
 
 body {
     overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    font-style: normal;
 }
 
 li {
@@ -39,19 +34,21 @@ li {
 }
 
 .main-title {
-    text-align: center;
-    color: var(--shades-black);
-    font-size: var(--font-heading-2);
+    font-family: var(--font-primary);
+    font-size: var(--font-6xl);
     font-weight: var(--font-bold);
+    color: var(--shades-black);
+    text-align: center;
     font-style: normal;
     margin-bottom: 32px;
 }
 
 .page-title {
-    text-align: start;
-    color: var(--shades-black);
-    font-size: var(--font-heading-2);
+    font-family: var(--font-primary);
+    font-size: var(--font-6xl);
     font-weight: var(--font-bold);
+    color: var(--shades-black);
+    text-align: start;
     font-style: normal;
     margin-top: 100px;
     margin-bottom: 32px;
