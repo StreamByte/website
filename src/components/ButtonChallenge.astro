@@ -1,12 +1,12 @@
-<a href="https://discord.gg/xWKrfDKkCY" target="_blank" rel="noreferrer" class="discord-button">
+<div class="download-button">
     <div class="button-content">
-        <img src="/assets/icons/discord.svg" alt="" class="discord-icon">
+        <img src="/assets/icons/confirm.svg" alt="" class="confirm-icon">
         <slot />
     </div>
-</a>
+</div>
 
 <style is:global>
-    .discord-button {
+    .download-button {
         font-family: var(--font-primary);
         font-size: var(--font-base);
         font-weight: var(--font-bold);
@@ -28,14 +28,14 @@
         position: relative;
     }
 
-    .discord-icon {
+    .confirm-icon {
         width: 24px;
         margin-right: 10px;
     }
 
-    .discord-button:hover {
+    .download-button:hover {
         transform: translate(-4px, -4px);
         box-shadow: 4px 4px 0 var(--primary-900);
-        background-color: var(--primary-100);
+        background-color: var(--primary-300);
     }
 </style>

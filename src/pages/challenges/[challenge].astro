@@ -1,51 +1,166 @@
 ---
-
+import ButtonChallenge from "../../components/ButtonChallenge.astro"
+import ButtonYouTube from "../../components/ButtonYouTube.astro";
+import ButtonDiscord from "../../components/ButtonDiscord.astro"
 import ChallengeLevel from "../../components/ChallengeLevel.astro";
 import StackTag from "../../components/StackTag.astro";
 import Layout from "../../layouts/Layout.astro";
 
-import '../../styles/main.css'
+import '../../styles/main.css';
 
 export function getStaticPaths() {
     return [
-        {params: { challenge: 'Reto 01 - Tarjeta de producto' }},
-        {params: { challenge: 'Reto 02 - Componente de encuesta' }},
-        {params: { challenge: 'Reto 03 - Página de FAQ' }},
+        { params: { challenge: 'reto-01' }},
+        { params: { challenge: 'reto-02' }},
+        { params: { challenge: 'reto-03' }},
     ]
 }
 
 const { challenge } = Astro.params;
 
+const RESOURCES = [
+    {
+        downloads: "/downloads/retos-01.zip",
+    }
+]
+
+interface Title {
+    [key: string]: string
+}
+
+const titles: Title = {
+    "reto-01": "Tarjeta de producto",
+    "reto-02": "Componente de encuesta",
+    "reto-03": "Página de FAQ",
+}
+
+interface Description {
+    [key: string]: string
+}
+
+const descriptions: Description = {
+    "reto-01": "El reto de calentamiento preferido de la comunidad, una tarjeta de previsualización de producto con animación sencilla. Perfecto para practicar las bases de HTML y CSS.",
+    "reto-02": "Componente de encuesta de satiscacción con animaciones. Practica flexbox y crea un componente animado.",
+    "reto-03": "Este reto está diseñado para practicar tus habilidades de HTML y CSS, es una página de preguntas frecuentes donde tendrás que usar propiedades de CSS para alinear y estilar la interacción del botón y like.x",
+}
+
+interface Image {
+    [key: string]: string
+}
+
+const previews: Image = {
+    "reto-01": "/assets/images/reto-01.png",
+    "reto-02": "/assets/images/reto-02.png",
+    "reto-03": "/assets/images/reto-03.png",
+}
+
+interface Links {
+    [key: string]: string
+}
+
+const links: Links = {
+    "reto-01": "/assets/downloads/reto-01.zip",
+    "reto-02": "/assets/downloads/reto-02.zip",
+    "reto-03": "/assets/downloads/reto-03.zip",
+}
 ---
-<Layout title={challenge}>
+<Layout title={titles[challenge]}>
     <main class="challenge-section">
+        <div class="resources">
+            <div class="button-group">
+
+                        <a href={links[challenge]} download>
+                            <ButtonChallenge>Descargables</ButtonChallenge>
+                        </a>
+
+                <ButtonYouTube>Ver tutoriales</ButtonYouTube>
+                <ButtonDiscord>Comunidad</ButtonDiscord>
+            </div>
+            <h4 class="resource-title">Este reto incluye:</h4>
+            <ul class="resource-list">
+                <li class="content-item">🎨 Diseño y prototipo de Figma.</li>
+                <li class="content-item">📎 Plantilla inicial del código.</li>
+                <li class="content-item">👀 README.md del reto.</li>
+            </ul>
+        </div>
         <div class="challenge-content">
-            <h2 class="main-page-title">{challenge}</h2>
-            <p class="challenge-description">Este reto está diseñado para practicar tus habilidades de HTML y CSS, es una tarjeta de previsualización de producto donde tendrás que usar propiedades de CSS para alinear y estilar la interacción del botón y like.</p>
+            <h2 class="main-page-title">{titles[challenge]}</h2>
+            <p class="challenge-description">{descriptions[challenge]}</p>
 
             <div class="preview-level">
                 <StackTag />
                 <ChallengeLevel />
             </div>
-            <img src="/assets/images/reto-01.png" alt="imagen del reto" class="challenge-preview" />
+            <img src={previews[challenge]} alt="imagen del reto" class="challenge-preview" />
 
             <h3 class='instructive-title'>Instrucciones</h3>
-            <ul class="instructive-list">
-                <li class="instructive-item">Descarga los archivos de diseño y plantilla del código.</li>
+            <ol class="instructive-list">
+                <li class="instructive-item">Descarga la carpeta con el diseño y plantilla del código. Arrastra el archivo <span class="accent-text">.fig</span> a Figma, funciona tanto en navegador como en la app de escritorio.</li>
 
-                <li class="instructive-item">Revisa en el README.md los detalles del proyecto e información del código y en el archivo de Figma el sistema de diseño y reto en cuestión</li>
+                <li class="instructive-item">Abre la carpeta con la plantilla inicial en tu editor de código preferido y revisa el <span class="accent-text">README.md</span> con los detalles del reto.</li>
 
-                <li class="instructive-item">Si recién vas comenzando, utiliza solamente las tecnologías recomendadas. Aunque te invitamos a usar tu lenguaje favorito y mejorar el código.</li>
+                <li class="instructive-item">Revisa el sistema de diseño y prototipo en Figma. Tendrás toda la información en el archivo <span class="accent-text">DESIGN_SYSTEM.md</span> de cada plantilla.</li>
 
-                <li class="instructive-item">Si necesitas apoyo pregunta a la comunidad, puede que alguien ya haya tenido esa duda.</li>
+                <li class="instructive-item">Resuelve utilizando las tecnologías recomendadas si eres principiante. También puedes usar tu stack favorito. El sitio desplegado debe ser lo más parecido al diseño.</li>
                 
-                <li class="instructive-item">Puedes postular tu código en la comunidad, los más votados aparecerán en en salón de la fama de las soluciones, actualmente en desarrollo.</li>
-            </ul>
+                <li class="instructive-item">Si necesitas apoyo o buscas resolver en equipo, entra a la nuestro servidor de Discord. También puedes postular tus soluciones, las más votadas aparecerán en el salón de la fama que se encuentra en desarrollo.</li>
+
+                <li class="instructive-item">Cualquier sistema de diseño, componente o proyecto que hayas creado es completamente tuyo. Puedes adaptarlo en tus propios proyectos. Si lo haces, compártelo que también aparecerá en el salón de la fama.</li>
+            </ol>
+            <!-- TODO: Crear componente de preguntas frecuentes -->
+            <!-- <h3 class='instructive-title'>Preguntas Frecuentes</h3> -->
         </div>
     </main>
 </Layout>
 
 <style is:global>
+    .resources {
+        display: flex;
+        flex-direction: column;
+        padding-top: 47.5px;
+        padding-left: 32px;
+        position: fixed;
+        border: 2px solid var(--primary-900);
+        border-radius: 10px;
+        width: 397px;
+        height: 420px;
+        left: 63%;
+        gap: 20px;
+        transition: 200ms;
+    }
+
+    .resources:hover {
+        background-color: var(--primary-50);
+        transform: translate(-4px, -4px);
+        box-shadow: 4px 4px 0 var(--primary-900);
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 12px;
+    }
+    .resource-title {
+        font-size: var(--font-lg);
+        font-weight: var(--font-bold);
+    }
+
+    .resource-list {
+        font-size: var(--font-md);
+        font-weight: var(--font-medium);
+        list-style: none;
+    }
+
+    .content-item {
+        margin-bottom: 12px;
+    }
+
+    .accent-text {
+        color: var(--primary-700);
+        font-weight: var(--font-bold);
+    }
+
     .challenge-content {
         margin-left: 100px;
         width: 642px;
@@ -53,6 +168,8 @@ const { challenge } = Astro.params;
     
     .challenge-description {
         font-family: var(--font-primary);
+        font-size: var(--font-md);
+        font-weight: var(--font-medium);
         margin-bottom: 24px;
     }
 
@@ -88,7 +205,8 @@ const { challenge } = Astro.params;
     
     .instructive-item {
         font-family: var(--font-secondary);
-        font-size: var(--font-lg);
+        font-size: var(--font-md);
+        font-weight: var(--font-medium);
         margin-bottom: 40px;
     }
 </style>
