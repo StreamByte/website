@@ -9,10 +9,16 @@ import ButtonYouTube from '../components/ButtonYouTube.astro'
 import ButtonCoffee from '../components/ButtonCoffee.astro'
 
 import '../styles/main.css'
+
 ---
 
 <Layout title="StreamByte ⚡ - Practica y mejora tus habilidades en Front-End con retos a base de diseños reales y profesionales">
 	<main>
+		<div class="bg-animation">
+			<div class="main blob"></div>
+			<div class="second blob" />
+			<div class="third blob" />
+		</div>
 		<section class="hero-section">
 			<h1 class="hero-display-text">
 				Retos Frontend diseñados a medida
@@ -134,4 +140,79 @@ import '../styles/main.css'
 		margin: auto;
         width: 1080px;
     }
+
+	.bg-animation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: -2;
+		width: 500px;
+		height: 500px;
+		position: absolute;
+		top: 12%;
+		left: 30%;
+		filter: blur(72px);
+		opacity: 0.4;
+	}
+
+	.blob {
+		width: 300px;
+		border-radius: 100px;
+	}
+
+	.main {
+		background-color: var(--primary-700);
+		position: absolute;
+		top: 200px;
+		left: 100px;
+		width: 200px;
+		height: 240px;
+		
+		animation: main 8s infinite ease;
+		}
+
+	.second {
+		background-color: var(--primary-500);
+		position: absolute;
+		top: 80px;
+		right: -20px;
+		width: 320px;
+		height: 200px;
+		
+		animation: second 8s infinite ease;
+	}
+
+	.third {
+		background-color: var(--primary-300);
+		position: absolute;
+		right: 0;
+		top: 300px;
+		width: 200px;
+		height: 250px;
+		
+		animation: third 8s infinite linear;
+	}
+
+	@keyframes main {
+		0% {top: 200px; left: 100px; transform: scale(1);}
+		30% {top: 300px; left: 150px; transform: scale(1.4);}
+		60% {top: 100px; left: 200px; transform: scale(1.3);}
+		100% {top: 200px; left: 100px; transform: scale(1);}
+	}
+
+	@keyframes second {
+		0% {top: 80px; right: -20px; transform: scale(1.2);}
+		30% {top: 300px; right: -20px;transform: scale(1);}
+		60% {top: 200px; right: 100px;transform: scale(1);}
+		100% {top: 120px; right: -20px; transform: scale(1.4);}
+	}
+
+	@keyframes third {
+		0% {top: 250px; right: 0px; transform: scale(1);}
+		30% {top: 150px; right: 150px;transform: scale(1.4);}
+		60% {top: 250px; right: 100px;transform: scale(1);}
+		100% {top: 250px; right: 0px; transform: scale(1);}
+	}
+
 </style>
