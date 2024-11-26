@@ -1,0 +1,27 @@
+---
+import CardSlider from "../../components/CardSlider.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import '../../styles/main.css'
+---
+<Layout title="StreamByte ⚡ | Todos los retos">
+    <main class="challenge-section">
+        <div class="page-content">
+            <h2 class="main-page-title">Lista de Retos</h2>
+        </div>
+        <ul class="challenge-slider">
+            <CardSlider />
+        </ul>
+    </main>
+</Layout>
+
+<style>
+    .challenge-section {
+        margin-bottom: 96px;
+    }
+
+    .page-content {
+        margin-left: 100px;
+        margin-bottom: 32px;
+    }
+</style>

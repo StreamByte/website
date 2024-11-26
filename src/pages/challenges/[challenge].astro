@@ -1,0 +1,94 @@
+---
+
+import ChallengeLevel from "../../components/ChallengeLevel.astro";
+import StackTag from "../../components/StackTag.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import '../../styles/main.css'
+
+export function getStaticPaths() {
+    return [
+        {params: { challenge: 'Reto 01 - Tarjeta de producto' }},
+        {params: { challenge: 'Reto 02 - Componente de encuesta' }},
+        {params: { challenge: 'Reto 03 - Página de FAQ' }},
+    ]
+}
+
+const { challenge } = Astro.params;
+
+---
+<Layout title={challenge}>
+    <main class="challenge-section">
+        <div class="challenge-content">
+            <h2 class="main-page-title">{challenge}</h2>
+            <p class="challenge-description">Este reto está diseñado para practicar tus habilidades de HTML y CSS, es una tarjeta de previsualización de producto donde tendrás que usar propiedades de CSS para alinear y estilar la interacción del botón y like.</p>
+
+            <div class="preview-level">
+                <StackTag />
+                <ChallengeLevel />
+            </div>
+            <img src="/assets/images/reto-01.png" alt="imagen del reto" class="challenge-preview" />
+
+            <h3 class='instructive-title'>Instrucciones</h3>
+            <ul class="instructive-list">
+                <li class="instructive-item">Descarga los archivos de diseño y plantilla del código.</li>
+
+                <li class="instructive-item">Revisa en el README.md los detalles del proyecto e información del código y en el archivo de Figma el sistema de diseño y reto en cuestión</li>
+
+                <li class="instructive-item">Si recién vas comenzando, utiliza solamente las tecnologías recomendadas. Aunque te invitamos a usar tu lenguaje favorito y mejorar el código.</li>
+
+                <li class="instructive-item">Si necesitas apoyo pregunta a la comunidad, puede que alguien ya haya tenido esa duda.</li>
+                
+                <li class="instructive-item">Puedes postular tu código en la comunidad, los más votados aparecerán en en salón de la fama de las soluciones, actualmente en desarrollo.</li>
+            </ul>
+        </div>
+    </main>
+</Layout>
+
+<style is:global>
+    .challenge-content {
+        margin-left: 100px;
+        width: 642px;
+    }
+    
+    .challenge-description {
+        font-family: var(--font-primary);
+        margin-bottom: 24px;
+    }
+
+    .preview-level {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:4px;
+    }
+
+    .challenge-preview {
+        width: 642px;
+        border: 2px solid var(--primary-900);
+        border-radius: 10px;
+        margin-bottom: 96px;
+        transition: 200ms;
+    }
+
+    .challenge-preview:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 4px 4px 0 var(--primary-900);
+    }
+
+    .instructive-title {
+        font-size: var(--font-2xl);
+        margin-bottom: 32px;
+    }
+
+    .instructive-list {
+        margin-left: 16px;
+        margin-bottom: 96px;
+    }
+    
+    .instructive-item {
+        font-family: var(--font-secondary);
+        font-size: var(--font-lg);
+        margin-bottom: 40px;
+    }
+</style>

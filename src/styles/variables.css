@@ -46,12 +46,12 @@
     --js-color: #F0DB4F;
 
     /* Fuentes tipográficas */
-    --font-primary: 'Orbitron', sans-serif;
-    --font-secondary: 'Inter', sans-serif;
+    --font-display: 'Inter', sans-serif;
+    --font-primary: 'Inter', sans-serif;
 
     /* Tamaño de fuente */
-    --font-display: 120px;
-    --font-display-2: 100px;
+    --font-display-1: 96px;
+    --font-display-2: 96px;
     --font-8xl: 62px;
     --font-7xl: 54px;
     --font-6xl: 48px;
