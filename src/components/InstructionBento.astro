@@ -1,7 +1,3 @@
----
-import LoginButton from '../components/LoginButton.astro'
----
-
 <div class="bento-section">
     <!-- Sección de instrucciones -->
     <div class="bento-container">
@@ -72,41 +68,6 @@ import LoginButton from '../components/LoginButton.astro'
             </div>
         </ul>
     </div>
-    
-<!-- Sección de beneficios -->
-    <div class="bento-container">
-        <ul class="instructions">
-            <li class="benefit-card howto-card">
-                <div class="benefit-content">
-                    <h3 class="benefit-title light-title">
-                        ¡No más Tutorial Hell!
-                    </h3>
-                    <p class="benefit-text light-text">
-                        Los tutoriales son muy buenos, pero no podemos depender de ellos para todos nuestros proyectos, practicar con diseños reales y resolver utilizando nuestros propios métodos ayuda mucho a salir del “Tutorial Hell”.
-                    </p>
-                    <p class="benefit-text light-text">
-                        Así que StreamByte te invita a usar el lenguaje de tu preferencia, añadir animaciones, elaborar más páginas o cambiar el diseño, las soluciones más votadas por la comunidad aparecerán en este sitio.
-                    </p>
-                </div>
-            </li>
-            <!-- <li class="benefit-card pro-card">
-                <div class="benefit-content">
-                    <h3 class="benefit-title dark-title">
-                        Adiós al síndrome del impostor
-                    </h3>
-                    <p class="benefit-text dark-text">
-                        Cuando vas comenzando, aprender programación puede parecer imposible, sobre todo si estás vas por tu cuenta. Ahí entramos nosotros.
-                    </p>
-                    <p class="benefit-text dark-text">
-                        Esta página fue creada para ayudar a otros devs que buscan diseños, componentes y recursos de calidad para aprender y seguir practicando.
-                    </p>
-                    <p class="benefit-text dark-text">
-                        Si quieres subscribirte a la newsletter con retos exclusivos, tener acceso a retos premium y otras sorpresas más, considera ser miembro Pro.
-                    </p>
-                </div>
-            </li> -->
-        </ul>
-    </div>
 </div>
 
 <style is:global>
@@ -150,11 +111,14 @@ import LoginButton from '../components/LoginButton.astro'
         margin-top: -280px;
         margin-right: -120px;
         transition: 120ms;
+        opacity: 0.3;
+        /* mix-blend-mode: overlay; */
     }
 
     .instructive-icon:hover {
         scale: 1.2;
         translate: -20%;
+        opacity: 1;
     }
 
     .instructive-content {
@@ -164,15 +128,15 @@ import LoginButton from '../components/LoginButton.astro'
     }
 
     .instructive-title {
-        font-family: var(--font-family-primary);
-        font-size: var(--font-heading-3);
+        font-family: var(--font-primary);
+        font-size: var(--font-4xl);
         font-weight: var(--font-bold);
         margin-bottom: 12px;
     }
 
     .instructive-text {
-        font-family: var(--font-family-secondary);
-        font-size: var(--font-heading-6);
+        font-family: var(--font-secondary);
+        font-size: var(--font-md);
         font-weight: var(--font-medium);
     }
 
@@ -205,16 +169,16 @@ import LoginButton from '../components/LoginButton.astro'
     }
 
     .benefit-title {
-        font-family: var(--font-family-primary);
-        font-size: var(--font-heading-3);
+        font-family: var(--font-secondary);
+        font-size: var(--font-4xl);
         font-weight: var(--font-bold);
         line-height: 40px;
         margin-bottom: 12px;
     }
 
     .benefit-text {
-        font-family: var(--font-family-secondary);
-        font-size: var(--font-heading-6);
+        font-family: var(--font-secondary);
+        font-size: var(--font-md);
         font-weight: var(--font-medium);
         margin-bottom: 32px;
     }

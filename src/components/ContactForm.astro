@@ -4,7 +4,7 @@ import '../styles/main.css'
 <div class="section-container">
     <div class="contact-container">
         <h2 class="cta-title">¿Necesitas construir un proyecto web?</h2>
-        <p class="contact-description">Hola ✨ soy José Gonzz y me dedico a diseñar y desarrollar sitios web. Si buscas a alguien que construya tu idea y digitalice tu marca o emprendimiento, contáctame.</p>
+        <p class="contact-description">Hola ✨ soy José Gonzz. Si necesitas diseñar y desarrollar sitios web que marquen la diferencia, contáctame.</p>
         <div class="social-icons">
             <p class="social-text">¡Podemos conectar aqui!</p>
 
@@ -118,16 +118,16 @@ import '../styles/main.css'
     }
 
     .contact-description {
-        font-family: var(--font-family-secondary);
-		font-size: var(--font-heading-6);
+        font-family: var(--font-secondary);
+		font-size: var(--font-md);
 		font-weight: var(--font-medium);
 		font-style: normal;
     }
 
     .social-text {
-        font-family: var(--font-family-secondary);
-        font-size: var(--font-paragraph-1);
-        font-weight: var(--font-medium);
+        font-family: var(--font-secondary);
+        font-size: var(--font-base);
+        font-weight: var(--font-bold);
         margin-bottom: 8px;
     }
 
@@ -152,16 +152,24 @@ import '../styles/main.css'
     }
 
     .contact-form {
+        background-color: var(--shades-white);
+        border: 2px solid var(--primary-900);
         padding: 24px 32px 45px 32px;
         width: 528px;
         height: 548px;
-        background-color: var(--primary-400);
         border-radius: 20px;
+        transition: 120ms;
+    }
+
+    .contact-form:hover {
+        transform: translate(-6px, -6px);
+        box-shadow: 6px 6px var(--primary-900);
+        background-color: var(--primary-50);
     }
 
     .form-title {
-        font-family: var(--font-family-primary);
-        font-size: var(--font-heading-3);
+        font-family: var(--font-primary);
+        font-size: var(--font-4xl);
         font-weight: var(--font-bold);
         margin-bottom: 24px;
     }
@@ -184,8 +192,8 @@ import '../styles/main.css'
     }
 
     label {
-        font-family: var(--font-family-secondary);
-        font-size: var(--font-heading-6);
+        font-family: var(--font-secondary);
+        font-size: var(--font-md);
     }
     
     input[type="text"],
@@ -206,8 +214,8 @@ import '../styles/main.css'
     }
     
     input::placeholder, textarea::placeholder {
-        font-family: var(--font-family-secondary);
-        font-size: var(--font-paragraph-1);
+        font-family: var(--font-secondary);
+        font-size: var(--font-base);
         font-weight: var(--font-semibold);
         color: var(--shades-black);
     }
@@ -217,8 +225,8 @@ import '../styles/main.css'
     }
 
     .check-title {
-        font-family: var(--font-family-secondary);
-        font-size: var(--font-paragraph-1);
+        font-family: var(--font-secondary);
+        font-size: var(--font-md);
         font-weight: var(--font-semibold);
     }
 
@@ -244,22 +252,23 @@ import '../styles/main.css'
     }
 
     .btn {
-        padding: 8px 14px;
+        font-family: var(--font-secondary);
+        font-size: var(--font-md);
+        font-weight: var(--font-medium);
+        background-color: var(--shades-white);
         border: 2px solid var(--primary-900);
         border-radius: 8px;
-        font-family: var(--font-family-primary);
-        font-size: var(--font-heading-6);
-        font-weight: var(--font-medium);
+        padding: 8px 14px;
         transition: 120ms;
-        background-color: var(--shades-white);
         z-index: 1;
         margin-top: 24px;
         cursor: pointer;
     }
 
     .btn:hover {
-        transform: translate(8px, 8px);
-        box-shadow: 8px 8px 0 var(--primary-900);
+        box-shadow: 4px 4px 0 var(--primary-900);
+        background-color: var(--primary-300);
+        transform: translate(-4px, -4px);
         transform: translate(-4px, -4px);
     }
 </style>
