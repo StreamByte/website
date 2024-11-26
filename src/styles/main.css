@@ -11,14 +11,12 @@
 html {
     background-color: var(--shades-white);
     font-family: var(--font-primary);
+    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
-}
-
-li {
-    list-style: none;
+    justify-content: center;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -36,7 +34,7 @@ li {
 .main-title {
     font-family: var(--font-primary);
     font-size: var(--font-6xl);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-black);
     color: var(--shades-black);
     text-align: center;
     font-style: normal;
@@ -52,6 +50,14 @@ li {
     font-style: normal;
     margin-top: 100px;
     margin-bottom: 32px;
+}
+
+.main-page-title {
+    font-family: var(--font-primary);
+    font-size: var(--font-6xl);
+    margin-top: 96px;
+    margin-bottom: 24px;
+    line-height: 48px;
 }
 
 .favorite-challenges {

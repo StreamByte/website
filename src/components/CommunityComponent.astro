@@ -5,7 +5,7 @@ import ButtonYouTube from "./ButtonYouTube.astro"
 
 
 <main class="community-container">
-    <h2 class="main-title">Únete a la comunidad</h2>
+    <h2 class="community-title">Únete a la comunidad</h2>
     <p class="community-text">Muchos desarrolladores se reúnen en nuestra comunidad para compartir recursos, dar ayuda, estar al tanto de los nuevos retos en StreamByte, crear proyectos en conjunto y mucho más.</p>
     <div class="button-group-center">
         <ButtonDiscord>Discord</ButtonDiscord>
@@ -15,15 +15,24 @@ import ButtonYouTube from "./ButtonYouTube.astro"
 
 <style is:global>
     .community-container {
-        background-color: var(--secondary-200);
+        background-color: var(--primary-200);
         margin-bottom: 100px;
         max-width: 1080px;
         padding: 36px 36px 100px 36px;
         border-radius: 20px;
     }
 
+    .community-title {
+        font-family: var(--font-primary);
+        font-size: var(--font-4xl);
+        font-weight: var(--font-bold);
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
     .community-text {
-        font-family: var(--font-secondary);
+        font-family: var(--font-primary);
         font-size: var(--font-md);
         font-weight: var(--font-medium);
         display: flex;
