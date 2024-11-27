@@ -18,12 +18,6 @@ export function getStaticPaths() {
 
 const { challenge } = Astro.params;
 
-const RESOURCES = [
-    {
-        downloads: "/downloads/retos-01.zip",
-    }
-]
-
 interface Title {
     [key: string]: string
 }
@@ -59,9 +53,9 @@ interface Links {
 }
 
 const links: Links = {
-    "reto-01": "/assets/downloads/reto-01.zip",
-    "reto-02": "/assets/downloads/reto-02.zip",
-    "reto-03": "/assets/downloads/reto-03.zip",
+    "reto-01": "/assets/downloads/reto-01",
+    "reto-02": "/assets/downloads/reto-02",
+    "reto-03": "/assets/downloads/reto-03",
 }
 ---
 <Layout title={titles[challenge]}>
