@@ -2,7 +2,6 @@
 import ButtonChallenge from "../../components/ButtonChallenge.astro"
 import ButtonYouTube from "../../components/ButtonYouTube.astro";
 import ButtonDiscord from "../../components/ButtonDiscord.astro"
-import ChallengeLevel from "../../components/ChallengeLevel.astro";
 import StackTag from "../../components/StackTag.astro";
 import Layout from "../../layouts/Layout.astro";
 
@@ -35,7 +34,7 @@ interface Description {
 const descriptions: Description = {
     "reto-01": "El reto de calentamiento preferido de la comunidad, una tarjeta de previsualización de producto con animación sencilla. Perfecto para practicar las bases de HTML y CSS.",
     "reto-02": "Componente de encuesta de satiscacción con animaciones. Practica flexbox y crea un componente animado.",
-    "reto-03": "Este reto está diseñado para practicar tus habilidades de HTML y CSS, es una página de preguntas frecuentes donde tendrás que usar propiedades de CSS para alinear y estilar la interacción del botón y like.x",
+    "reto-03": "Este reto está diseñado para practicar tus habilidades de HTML y CSS, es una página de preguntas frecuentes donde tendrás que usar propiedades de CSS para alinear y estilar la interacción del botón y like.",
 }
 
 interface Image {
@@ -57,7 +56,29 @@ const links: Links = {
     "reto-02": "/downloads/reto-02.zip",
     "reto-03": "/downloads/reto-03.zip",
 }
+
+interface Level {
+    [key: string]: string
+}
+
+const levels: Level = {
+    "reto-01": "Bebé Developer",
+    "reto-02": "Bebé Developer",
+    "reto-03": "Principiante",
+}
+
+interface Stars {
+    [key: string]: number
+}
+
+const stars: Stars = {
+    "reto-01": 1,
+    "reto-02": 1,
+    "reto-03": 2,
+}
+
 ---
+
 <Layout title={titles[challenge]}>
     <main class="challenge-section">
         <div class="resources">
@@ -71,13 +92,13 @@ const links: Links = {
                 <ButtonDiscord>Comunidad</ButtonDiscord>
             </div>
 
-            <h4 class="resource-title">Este reto incluye:</h4>
+            <h4 class="resource-title">Todos los retos incluye:</h4>
 
             <ul class="resource-list">
                 <li class="content-item">🎨 Diseño y prototipo de Figma.</li>
                 <li class="content-item">📎 Plantilla inicial del código.</li>
                 <li class="content-item">👀 README.md del reto.</li>
-                <p class="content-text">¡También puedes descargar con la <a href="https://github.com/StreamByte/cli" target="_blank" rel="no referrer" class="accent-text">línea de comandos</a>!</p>
+                <p class="content-text">¡También puedes descargar directamente desde <a href="https://github.com/StreamByte/cli" target="_blank" rel="no referrer" class="accent-text">GitHub</a>!</p>
             </ul>
 
         </div>
@@ -87,8 +108,23 @@ const links: Links = {
 
             <div class="preview-level">
                 <StackTag />
-                <ChallengeLevel />
+
+                <div class="level-container">
+                    <p class="level-name">{levels[challenge]}</p>
+                    <div class="star-container">
+                        {Array.from({ length: 5 }, (_, i) => (
+                            <img 
+                                src={i < stars[challenge] ? "/assets/icons/star.svg" : "/assets/icons/star-disabled.svg"} 
+                                alt={i < stars[challenge] ? "star" : "star-disabled"} 
+                                class="star-icon" 
+                            />
+                        ))}
+                    </div>
+                </div>
+                
+
             </div>
+
             <img src={previews[challenge]} alt="imagen del reto" class="challenge-preview" />
 
             <h3 class='instructive-title'>Instrucciones</h3>
@@ -212,5 +248,30 @@ const links: Links = {
         font-size: var(--font-md);
         font-weight: var(--font-medium);
         margin-bottom: 40px;
+    }
+    .level-container {
+        margin-left: 26px;
+        margin-bottom: 4px;
+    }
+
+    .level-name {
+        font-size: var(--font-sm);
+        font-weight: var(--font-bold);
+        display: flex;
+        margin-bottom: 2px;
+    }
+
+    .star-container {
+        display: flex;
+        gap: 8px;
+    }
+
+    .star-icon {
+        width: 16px;
+        transition: 200ms;
+    }
+
+    .star-icon:hover {
+        scale: 1.3;
     }
 </style>
