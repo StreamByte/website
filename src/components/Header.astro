@@ -5,7 +5,7 @@ import ButtonGitHub from "./ButtonGitHub.astro"
 <header class="header">
     <a href="/#" class="header-logo">
         <img src="/assets/images/logo-main.png" alt="Logotipo de StreamByte" class="logo" />
-        <span class="accent-text">Beta</span>
+        <span class="accent-text-beta">Beta</span>
     </a>
     <nav class="navbar">
         <ul class="items-container">
@@ -46,8 +46,12 @@ import ButtonGitHub from "./ButtonGitHub.astro"
         scale: 1.1;
     }
 
+
     .accent-text {
         font-size: var(--font-xs);
+
+    .accent-text-beta {
+        font-size: var(--font-sm);
         font-weight: var(--font-bold);
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -66,11 +70,11 @@ import ButtonGitHub from "./ButtonGitHub.astro"
         z-index: 2;
     }
 
-    .accent-text, a {
+    .accent-text-beta, a {
         text-decoration: none;
     }
 
-    .accent-text:hover {
+    .accent-text-beta:hover {
         scale: 1.1;
         background-color: var(--secondary-500);
     }
