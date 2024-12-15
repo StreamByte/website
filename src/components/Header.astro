@@ -37,29 +37,30 @@ import ButtonGitHub from "./ButtonGitHub.astro"
 
     .header-logo {
         display: flex;
+        align-items: center;
         margin-left: 100px;
         transition: 120ms;
-        gap: 8px;
     }
 
     .header-logo:hover {
         scale: 1.1;
     }
 
-    .header-logo:hover .accent-text {
-        transform: rotate(20deg);
-    }
-
     .accent-text {
-        font-size: var(--font-sm);
+        font-size: var(--font-xs);
         font-weight: var(--font-bold);
+        letter-spacing: 1px;
         text-transform: uppercase;
-        color: var(--shades-white);
+        color: var(--shades-black);
         background-color: var(--primary-500);
         display: flex;
+        position: absolute;
         justify-content: center;
         align-items: center;
-        padding: 0 8px;
+        padding: 2px 8px;
+        margin-left: 132px;
+        margin-bottom: 24px;
+        transform: rotate(12deg);
         border-radius: 20px;
         transition: 120ms;
         z-index: 2;
